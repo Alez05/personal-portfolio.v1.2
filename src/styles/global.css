@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================== ROOT VARS =================== */
+:root {
+  --whiteish: #F1EFEC;
+  --creamish: #D4C9BE;
+  --blueish: #123458;
+  --blackish: #030303;
+
+  --font-roboto-slab: 'Roboto Slab', serif;
+}
+
+/* ================== RESET =================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: var(--font-roboto-slab);
+  background-color: var(--whiteish);
+  overflow-x: hidden;
+}
+
+/* Ensure links are clean */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Wipe Next.js noise */
+.nextjs-portal,
+#nextjs__container,
+#__next-route-announcer {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
