@@ -1,0 +1,61 @@
+/* Plus wrapper properly centered */
+.cont-plus-wrapper {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Plus button itself */
+.cont-plus {
+  width: 60px;
+  height: 60px;
+  background-color: var(--creamish);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transform: translateY(-30%);
+}
+
+.cont-plus i {
+  font-size: 1.5rem;
+  color: var(--whiteish);
+}
+
+/* Radial Menu Above Plus */
+.radial-menu {
+  position: absolute;
+  bottom: 10px;
+  right: 90%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 99;
+}
+
+.circle {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: var(--creamish);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--whiteish);
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.circle i {
+  font-size: 1.1rem;
+}
+
+.circle:hover {
+  background-color: var(--blueish);
+  color: var(--whiteish);
+}
