@@ -1,4 +1,3 @@
-import { AboutHero } from "../shared/header"
 
 const About = () => {
   return (
