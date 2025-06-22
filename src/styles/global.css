@@ -3,17 +3,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ================== ROOT VARS =================== */
+/* ========== ROOT VARIABLES ========== */
+/* LIGHT THEME */
 :root {
-  --whiteish: #F1EFEC;
-  --creamish: #D4C9BE;
-  --blueish: #123458;
-  --blackish: #030303;
+  --bg-light: #F2F2F2;     /* main background */
+  --surface-light: #e2e2e2; /* cards, hero sections */
+  --accent-light: #DDDDDD;  /* links, buttons */
+  --text-light: #000000;    /* nav, footer, heavy text */
 
   --font-roboto-slab: 'Roboto Slab', serif;
+
+  --whiteish: var(--bg-light);
+  --creamish: var(--surface-light);
+  --grayish: var(--accent-light);
+  --blackish: var(--text-light);
 }
 
-/* ================== RESET =================== */
+/* DARK THEME */
+[data-theme='dark'] {
+  --bg-dark: #000000;       /* background */
+  --surface-dark: #B6B09F;  /* cards, hero sections */
+  --accent-dark: #EAE4D5;   /* links, buttons */
+  --text-dark: #F2F2F2;     /* nav text, body text */
+
+  --whiteish: var(--bg-dark);
+  --creamish: var(--surface-dark);
+  --blueish: var(--accent-dark);
+  --blackish: var(--text-dark);
+}
+
+/* ========== RESET ========== */
 *,
 *::before,
 *::after {
@@ -30,16 +49,35 @@ html,
 body {
   font-family: var(--font-roboto-slab);
   background-color: var(--whiteish);
+  color: var(--blackish);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Ensure links are clean */
+/* ========== LINKS ========== */
 a {
-  color: inherit;
+  color: var(--blueish);
   text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
-/* Wipe Next.js noise */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--blueish);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* ========== NEXT.JS CLEANUP ========== */
 .nextjs-portal,
 #nextjs__container,
 #__next-route-announcer {

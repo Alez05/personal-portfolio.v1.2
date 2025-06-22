@@ -1,1 +1,1 @@
-export { AboutHero } from './header'
+export { Hero } from './hero'
