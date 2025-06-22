@@ -11,7 +11,7 @@
 .cont-plus {
   width: 60px;
   height: 60px;
-  background-color: var(--creamish);
+  background-color: var(--grayish);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
 
 .cont-plus i {
   font-size: 1.5rem;
-  color: var(--whiteish);
+  color: var(--blackish);
 }
 
 /* Radial Menu Above Plus */
@@ -40,7 +40,7 @@
   position: absolute;
   width: 44px;
   height: 44px;
-  background-color: var(--creamish);
+  background-color: var(--grayish);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -56,6 +56,6 @@
 }
 
 .circle:hover {
-  background-color: var(--blueish);
+  background-color: var(--grayish);
   color: var(--whiteish);
 }
