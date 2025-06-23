@@ -1,7 +1,11 @@
+import { Button, Hero } from "@components/shared"
+
 const Projects = () => {
   return (
     <div className="p-10 text-center text-2xl">
-      <h1 className="text-3xl font-bold text-center text-blue-900">Projects Page</h1>
+      <Hero title="Projects" description="Example projects such as e-commerce, business websites, real-time administration apps, etc. Web design, web development, logo design.">
+        <Button>View Projects</Button>
+      </Hero>
     </div>
   )
 }

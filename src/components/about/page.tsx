@@ -1,9 +1,13 @@
+import { Button, Hero } from "@components/shared"
 
 const About = () => {
   return (
-    <div className="p-10 text-center text-2xl">
-      <h1 className="text-3xl font-bold text-center text-blue-900">About Page</h1>
-    </div>
+    <>
+      <Hero title="About me" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+        <Button variant="solid">Read more</Button>
+        <Button variant="outline">Download CV</Button>
+      </Hero>
+    </>
   )
 }
 
