@@ -8,6 +8,15 @@ const Home = () => {
         <Button>Resume</Button>
         <Button variant="outline">Resume</Button>
       </Hero>
+      <br />
+      <Hero title="Alexandru Cercel" subtitle="Front-end Developer" location="London, UK" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+        <Button>Resume</Button>
+        <Button variant="outline">Resume</Button>
+      </Hero>
+      <Hero title="Alexandru Cercel" subtitle="Front-end Developer" location="London, UK" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+        <Button>Resume</Button>
+        <Button variant="outline">Resume</Button>
+      </Hero>
     </div>
   )
 }
