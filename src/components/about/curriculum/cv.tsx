@@ -20,7 +20,7 @@ const CurriculumVitae = () => {
 
         {/* Summary */}
         <section className="cv-section summary">
-          <h2 className="cv-section-title">Summary</h2>
+          <h2 className="cv-section-title">Summaryxx</h2>
           <p className="cv-paragraph">
             I’m a Front-end developer with a strong background in hospitality. I spent several years in leadership roles,
             where I gained valuable experience in team coordination, problem-solving, and delivering outstanding customer service.
