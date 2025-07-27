@@ -1,6 +1,6 @@
 import { Button, Hero } from "@components/shared"
 import { JourneySection } from "./journey"
-import { CurriculumVitae } from "./curriculum/cv"
+import { default as CurriculumVitae } from "./curriculum/cv"
 
 const About = () => {
   return (
