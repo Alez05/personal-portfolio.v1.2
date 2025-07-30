@@ -1,4 +1,4 @@
-import timelineData from "../../../content/myjourney.json";
+import timelineData from "../../../data/myjourney.json";
 import { JourneyClient } from "./[client-journey]/client-journey";
 
 const JourneySection = () => {
