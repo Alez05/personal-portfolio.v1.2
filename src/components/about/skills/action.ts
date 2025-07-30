@@ -1,7 +1,7 @@
 import { TSkillGroup } from "./skills.type";
 
 
-export const getSkillsAction = async ():Promise<TSkillGroup | any> => {
+export const getSkillsAction = async ():Promise<TSkillGroup | null> => {
   try {
     const res = await fetch('http://3000/api/skills')
 

@@ -1,1 +1,1 @@
-export {JourneyClient} from './client-journey'
+export { JourneyClient } from './client-journey'

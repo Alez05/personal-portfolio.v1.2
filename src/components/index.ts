@@ -9,4 +9,4 @@ export { Footer } from './shared'
 
 //types
 
-export { type TCVData, type TSkillGroup } from './about'
+export { type TCVData, type TSkillGroup, type TJourney } from './about'
