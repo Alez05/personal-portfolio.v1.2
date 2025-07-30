@@ -5,3 +5,4 @@ export { About } from './page'
 
 export { type TCVData } from './curriculum'
 export {type TSkillGroup } from './skills'
+export {type TJourney } from './journey'

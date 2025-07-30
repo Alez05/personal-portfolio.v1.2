@@ -2,7 +2,7 @@
 
 import { TCVData } from "./cv.type"
 
-export const getCvAction = async ():Promise<TCVData | any > => {
+export const getCvAction = async ():Promise<TCVData | null > => {
   try {
     const res = await fetch('http://localhost:3000/api/cv')
 
