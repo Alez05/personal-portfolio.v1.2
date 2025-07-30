@@ -1,0 +1,16 @@
+import { TSkillGroup } from "./skills.type";
+
+
+export const getSkillsAction = async ():Promise<TSkillGroup | any> => {
+  try {
+    const res = await fetch('http://3000/api/skills')
+
+    if(!res.ok) throw new Error('Failed to load the skills data')
+
+    const data:TSkillGroup = await res.json()
+    return data
+  } catch(err) {
+    console.error('Error fetching the skils', err)
+    return null
+  }
+}

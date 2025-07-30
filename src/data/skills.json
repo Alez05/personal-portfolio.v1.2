@@ -1,0 +1,58 @@
+{
+  "skills": [
+    {
+      "title": "Frontend Development",
+      "subtitle": "Building sleek, responsive interfaces with modern frameworks and design systems.",
+      "skills": [
+        { "name": "JavaScript", "icon": "/public/icon/js.svg" },
+        { "name": "TypeScript", "icon": "/public/icon/typescript.svg" },
+        { "name": "React", "icon": "/public/icon/react.svg" },
+        { "name": "Vue", "icon": "/public/icon/vue.svg" },
+        { "name": "Next.js", "icon": "/public/icon/nextdotjs.svg" },
+        { "name": "Remix", "icon": "/public/icon/remix.svg" },
+        { "name": "Stimulus", "icon": "/public/icon/stimulus.svg" },
+        { "name": "Tailwind", "icon": "/public/icon/tailwindcss.svg" },
+        { "name": "Bootstrap", "icon": "/public/icon/bootstrap.svg" }
+      ]
+    },
+    {
+      "title": "Backend & Infrastructure",
+      "subtitle": "Managing databases, APIs, authentication, and deployment pipelines.",
+      "skills": [
+        { "name": "Ruby", "icon": "/public/icon/ruby.svg" },
+        { "name": "Ruby on Rails", "icon": "/public/icon/rubyonrails.svg" },
+        { "name": "SQL", "icon": "/public/icon/sql-server.svg" },
+        { "name": "PostgreSQL", "icon": "/public/icon/postgre.svg" },
+        { "name": "MySQL", "icon": "/public/icon/mysql.svg" },
+        { "name": "Firebase", "icon": "/public/icon/firebase.svg" },
+        { "name": "Docker", "icon": "/public/icon/docker.svg" },
+        { "name": "Heroku", "icon": "/public/icon/heroku.svg" },
+        { "name": "Netlify", "icon": "/public/icon/netlify.svg" },
+        { "name": "Pug", "icon": "/public/icon/pug.svg" }
+      ]
+    },
+    {
+      "title": "Development Tools & Web Practices",
+      "subtitle": "Supporting tools and modern web practices that enhance development and user experience.",
+      "skills": [
+        { "name": "Vite", "icon": "/public/icon/vite.svg" },
+        { "name": "Astro", "icon": "/public/icon/astro.svg" },
+        { "name": "Git", "icon": "/public/icon/git.svg" },
+        { "name": "GitHub", "icon": "/public/icon/github.svg" },
+        { "name": "Figma", "icon": "/public/icon/figma.svg" }
+      ]
+    },
+    {
+      "title": "Currently Learning",
+      "subtitle": "Languages and frameworks I'm exploring to expand my backend and fullstack knowledge.",
+      "skills": [
+        { "name": "Python", "icon": "/public/icon/python.svg" },
+        { "name": "PHP", "icon": "/public/icon/php.svg" },
+        { "name": "Laravel", "icon": "/public/icon/" },
+        { "name": "Django", "icon": "/public/icon/django.svg" },
+        { "name": "Node.js", "icon": "/public/icon/node-js.svg" },
+        { "name": "MongoDB", "icon": "/public/icon/mongodb.svg" }
+      ]
+    }
+  ]
+}
