@@ -1,31 +1,44 @@
-import { BurgerMenu } from './[client-nav]/burger-menu/burger-menu'
-import { PlusButton } from './[client-nav]/plus-button/plus-button'
+'use client'
+import { useState } from 'react'
 import './navbar.css'
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  // Helper function to check if link is active
+  const isActive = (path: any) => window.location.pathname === path ? 'active' : ''
+
   return (
-    <div className="container">
-      <div className="cont-link">
-        <a href="/" className="nav-link">
-          <i className="fa-solid fa-house"></i>
-          <h4>Home</h4>
-        </a>
+    <nav className='navbar' role="navigation" aria-label="Main navigation">
+      <a className='nav-logo' href="/">Alexandru Cercel</a>
+
+      <ul className='nav-links'>
+        <li><a href="/" className={isActive('/')}>Home</a></li>
+        <li><a href="/about" className={isActive('/about')}>About</a></li>
+        <li><a href="/projects" className={isActive('/projects')}>Projects</a></li>
+        <li><a href="/blog" className={isActive('/blog')}>Blog</a></li>
+        <li><a href="/contact" className={isActive('/contact')}>Contact</a></li>
+      </ul>
+
+      <button
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isMenuOpen}
+        className='burger'
+        onClick={toggleMenu}
+      >
+        <i className={`fa-solid ${isMenuOpen ? 'fa-xmark' : 'fa-bars'}`} style={{ fontSize: '30px' }}></i>
+      </button>
+
+      <div className={`dropdown ${isMenuOpen ? 'show' : ''}`}>
+        <a href="/" className={isActive('/')} onClick={() => setIsMenuOpen(false)}>Home</a>
+        <a href="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</a>
+        <a href="/projects" className={isActive('/projects')} onClick={() => setIsMenuOpen(false)}>Projects</a>
+        <a href="/blog" className={isActive('/blog')} onClick={() => setIsMenuOpen(false)}>Blog</a>
+        <a href="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</a>
       </div>
-      <div className="cont-link">
-        <a href="/about" className="nav-link">
-          <i className="fa-regular fa-address-card"></i>
-          <h4>About</h4>
-        </a>
-      </div>
-      <PlusButton />
-      <div className="cont-link">
-        <a href="/projects" className="nav-link">
-          <i className="fa-solid fa-book-open text-lg"></i>
-          <h4>Projects</h4>
-        </a>
-      </div>
-      <BurgerMenu />
-    </div>
+    </nav>
   )
 }
 

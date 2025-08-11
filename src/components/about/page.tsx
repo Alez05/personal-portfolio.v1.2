@@ -2,6 +2,7 @@ import { Button, Hero } from "@components/shared"
 import { JourneySection } from "./journey"
 import { default as CurriculumVitae } from "./curriculum/cv"
 import { Skills } from "./skills"
+import { DownloadSection } from "./dwd-section"
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
         <Button variant="outline">Download CV</Button>
       </Hero>
       <JourneySection/>
+      <DownloadSection />
       <CurriculumVitae />
       <Skills />
     </>
