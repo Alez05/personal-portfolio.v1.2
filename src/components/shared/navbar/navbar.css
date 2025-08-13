@@ -36,14 +36,12 @@ a {
   font-size: 1.3rem;
   font-weight: bold;
   color: #F1EFEC;
-  left: 200px;
 }
 
 /* ===== Desktop Nav Links ===== */
 .nav-links {
   display: flex;
   gap: 2rem;
-  margin-right: 10rem;
 }
 
 .nav-links li a {
