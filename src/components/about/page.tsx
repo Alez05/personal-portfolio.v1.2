@@ -1,4 +1,4 @@
-import { Button, Hero } from "@components/shared"
+import { Button, ContactCTA, Hero } from "@components/shared"
 import { JourneySection } from "./journey"
 import { default as CurriculumVitae } from "./curriculum/cv"
 import { Skills } from "./skills"
@@ -13,8 +13,8 @@ const About = () => {
       </Hero>
       <JourneySection/>
       <DownloadSection />
-      <CurriculumVitae />
       <Skills />
+      <ContactCTA />
     </>
   )
 }

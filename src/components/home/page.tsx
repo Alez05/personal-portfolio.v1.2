@@ -17,6 +17,7 @@ const Home = () => {
         <Button>Resume</Button>
         <Button variant="outline">Resume</Button>
       </Hero>
+      <ContactCTA />
     </div>
   )
 }
