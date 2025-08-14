@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
 import '@styles/global.css'
-import { Footer, Navbar } from "@components/shared";
+import { ContactCTA, Footer, Navbar } from "@components/shared";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const geistSans = Geist({
@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Navbar />
+        <ContactCTA />
         <Footer />
       </body>
     </html>
