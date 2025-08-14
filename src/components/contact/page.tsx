@@ -1,4 +1,5 @@
 import { Button, Hero } from "@components/shared"
+import { ContactForm } from "./contact-form"
 
 const Contact = () => {
   return (
@@ -6,6 +7,7 @@ const Contact = () => {
       <Hero title="Contact me" description="Questions/comments? Or are you here to request a free quote for a website, logo design, or something else? Feel free to contact me via the form below. You'll get your answer on the same day.">
         <Button>To contact form</Button>
       </Hero>
+      <ContactForm />
     </div>
   )
 }

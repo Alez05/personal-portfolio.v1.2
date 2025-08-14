@@ -1,4 +1,4 @@
-import { Button, Hero } from "@components/shared"
+import { Button, ContactCTA, Hero } from "@components/shared"
 
 const Blog = () => {
   return (
@@ -6,6 +6,7 @@ const Blog = () => {
       <Hero title="Blogs" description="Interesting topics, stories, and guides on IT, development, web design, freelancing, and more.">
         <Button>View Blogs</Button>
       </Hero>
+      <ContactCTA />
     </div>
   )
 }
