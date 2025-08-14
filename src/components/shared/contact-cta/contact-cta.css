@@ -1,0 +1,41 @@
+.ct-wrapper {
+  display: flex;
+  flex-direction: column; /* stack title, description, button vertically */
+  align-items: center; /* horizontal center */
+  justify-content: center; /* vertical center (if parent has height) */
+  gap: 2rem; /* space between elements */
+  padding: 2rem; /* padding around content */
+  text-align: center;
+  background-color: #fff;
+}
+
+.ct-title {
+  font-size: 2.5rem;
+}
+
+.ct-description {
+  font-size: 1.1rem;
+  max-width: 600px; /* optional: limit width for nice readability */
+}
+
+.ct-link {
+  background: linear-gradient(to left, rgb(79, 123, 255) 50%, rgb(34, 192, 255) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-position 0.4s ease-out;
+}
+
+.ct-link:hover {
+  background-position: left bottom;
+}

@@ -2,6 +2,7 @@
   background-color: #F1EFEC;
   padding: 2rem 1rem;
   width: 100%;
+  border-top: 1px solid #ccc;
 }
 
 .ft-content {

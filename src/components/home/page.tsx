@@ -1,4 +1,4 @@
-import { Button } from "@components/shared"
+import { Button, ContactCTA } from "@components/shared"
 import { Hero } from "@components/shared/hero"
 
 const Home = () => {

@@ -2,6 +2,7 @@
 export { Navbar } from './navbar/navbar';
 export { Hero } from './hero'
 export { Footer } from './footer'
+export { ContactCTA } from './contact-cta'
 
 
 // reusbale components
