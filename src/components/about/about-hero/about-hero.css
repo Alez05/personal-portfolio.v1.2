@@ -1,0 +1,42 @@
+.ah-container {
+  background-image: url('../../../../public/image/contact.png');
+  padding: 6rem 2rem 4rem 2rem; /* extra top padding for navbar space */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ah-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1676dd, #060606);
+  -webkit-background-clip: text; /* for Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard */
+  color: transparent;
+}
+
+.ah-description {
+  max-width: 600px;
+  font-size: 1rem;
+  color: #030303; /* near black */
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+.ah-button {
+  background-color: #1676dd;
+  border-radius: 10px;
+  width: 200px;
+  height: 45px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
