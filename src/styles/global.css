@@ -48,7 +48,7 @@ html {
 html,
 body {
   font-family: var(--font-roboto-slab);
-  background-color: var(--whiteish);
+  background-color: #fff;
   color: var(--blackish);
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;

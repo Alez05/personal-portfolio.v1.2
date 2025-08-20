@@ -1,25 +1,24 @@
-import { Button, Hero } from "@components/shared"
+import './contact.css'
 import { ContactForm } from "./contact-form"
 import { SocialBox } from "./social-box"
-import './contact.css'
 import { Opportunities } from "./opportunities"
+import { ContactHero } from "./contact-hero"
 
 const Contact = () => {
   return (
-    <div className="p-10 text-center text-2xl">
-      <Hero title="Contact me" description="Questions/comments? Or are you here to request a free quote for a website, logo design, or something else? Feel free to contact me via the form below. You'll get your answer on the same day.">
-        <Button>To contact form</Button>
-      </Hero>
-      <div className="contact-container">
-        {/* Socials */}
-        <div className="contact-left">
-          <SocialBox />
-          <Opportunities />
-        </div>
-
-        {/* Contact Form */}
-        <div className="contact-right">
-          <ContactForm />
+    <div>
+      <ContactHero />
+      <div className="p-10 text-center text-2xl">
+        <div className="contact-container">
+          {/* Socials */}
+          <div className="contact-left">
+            <SocialBox />
+            <Opportunities />
+          </div>
+          {/* Contact Form */}
+          <div className="contact-right">
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

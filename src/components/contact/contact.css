@@ -4,7 +4,7 @@
   gap: 2rem;
   max-width: 1200px; /* keeps things centered, not too wide */
   margin: 0 auto; /* horizontal centering */
-  padding: 2rem; /* margin left/right you wanted */
+  padding: 3rem; /* margin left/right you wanted */
 }
 
 @media (min-width: 768px) {
@@ -15,7 +15,10 @@
 }
 
 .contact-left {
-  flex: 0 0 300px; /* fixed width for socials */
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .contact-right {
