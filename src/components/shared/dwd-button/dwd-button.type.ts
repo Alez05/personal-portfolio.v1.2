@@ -1,5 +1,5 @@
 
 export type DownloadButtonType = {
-  path: string;
+  path?: string;
   label?: string;
 }

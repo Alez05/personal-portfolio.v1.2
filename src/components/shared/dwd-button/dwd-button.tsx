@@ -19,7 +19,7 @@ const DownloadButton = ({ path, label = 'Download CV' }: DownloadButtonType) => 
 
       const a = document.createElement('a')
       a.href = url
-      a.download = path.split('/').pop() || 'file.pdf'
+      a.download = path?.split('/').pop() || 'file.pdf'
       a.target = '_blank'
       a.click()
     } catch (err) {

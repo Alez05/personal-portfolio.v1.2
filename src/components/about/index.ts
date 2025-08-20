@@ -1,5 +1,8 @@
 export { About } from './page'
 
+// components
+export { AboutHero } from './about-hero'
+
 
 // types
 
