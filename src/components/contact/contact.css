@@ -1,0 +1,24 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px; /* keeps things centered, not too wide */
+  margin: 0 auto; /* horizontal centering */
+  padding: 2rem; /* margin left/right you wanted */
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contact-left {
+  flex: 0 0 300px; /* fixed width for socials */
+}
+
+.contact-right {
+  flex: 1; /* contact form grows to take the rest */
+  max-width: 900px; /* so it doesn’t stretch infinitely */
+}

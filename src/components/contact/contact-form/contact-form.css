@@ -1,8 +1,6 @@
 .ctf-section {
   border: 1px solid #ccc;
   border-radius: 10px;
-  width: 50%;
-  margin: 1rem;
 }
 
 .contact-form {
@@ -10,6 +8,11 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 .ctf-subtitle {
