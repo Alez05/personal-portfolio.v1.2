@@ -2,6 +2,7 @@ import { Button, Hero } from "@components/shared"
 import { ContactForm } from "./contact-form"
 import { SocialBox } from "./social-box"
 import './contact.css'
+import { Opportunities } from "./opportunities"
 
 const Contact = () => {
   return (
@@ -13,6 +14,7 @@ const Contact = () => {
         {/* Socials */}
         <div className="contact-left">
           <SocialBox />
+          <Opportunities />
         </div>
 
         {/* Contact Form */}

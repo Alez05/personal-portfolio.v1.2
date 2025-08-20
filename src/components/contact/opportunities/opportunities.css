@@ -1,0 +1,41 @@
+.op-containter {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* makes top & bottom align nicely */
+  height: 100%; /* allow parent to control exact height */
+}
+
+.op-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: start;
+}
+
+.op-wrapper {
+  list-style-type: disc;
+  padding-left: 1rem; /* reduce space between bullet and text */
+  margin: 0;
+}
+
+.op-wrapper li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  line-height: 1.4; /* tighter spacing if needed */
+  text-align: start;
+}
+
+.op-wrapper li::marker {
+  color: #1a74c9;
+  font-size: 1rem; /* make marker size match text */
+}
