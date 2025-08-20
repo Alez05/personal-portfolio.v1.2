@@ -24,8 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        {children}
         <Navbar />
-          {children}
         <Footer />
       </body>
     </html>
