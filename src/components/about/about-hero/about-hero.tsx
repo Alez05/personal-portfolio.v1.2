@@ -5,8 +5,11 @@ const AboutHero = () => {
   return (
     <div className='ah-container'>
       <h1 className='ah-title'>About Me</h1>
-      <p className='ah-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis commodi cum repellendus voluptate in quibusdam tenetur labore atque perspiciatis id eligendi ipsam ipsum, doloremque suscipit at adipisci! Dolorum, facere molestiae.</p>
-      <a href="#about-me" className='ah-button'>Read more <i className="fa-solid fa-arrow-down"></i></a>
+      <p className='ah-description'>I’m a fullstack developer passionate about building elegant, performant web apps. I enjoy turning ideas into interactive experiences and working with tools and teams that help me grow.</p>
+      <div className='ah-wrapper'>
+        <DownloadButton path='cv/cv.pdf' />
+        <a href="#about-me" className='ah-button'>Read more</a>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+.dw-button {
+  background-color: transparent;
+  color: #000000;
+  border-radius: 10px;
+  width: 180px;
+  height: 45px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
