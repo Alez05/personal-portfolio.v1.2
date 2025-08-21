@@ -8,7 +8,7 @@ const DownloadSection = () => {
         <p className="text-lg mb-6">
           You can download my CV below to learn more about my background, experience, and skills.
         </p>
-        <DownloadButton path="cv/cv.pdf" label="Download My CV" />
+        <DownloadButton path="cv/cv.pdf" label="Download CV" />
       </div>
     </section>
   );

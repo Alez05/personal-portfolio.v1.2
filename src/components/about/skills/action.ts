@@ -3,7 +3,7 @@ import { TSkillGroup } from "./skills.type";
 
 export const getSkillsAction = async ():Promise<TSkillGroup | null> => {
   try {
-    const res = await fetch('http://3000/api/skills')
+    const res = await fetch('http://localhost:3000/api/skills')
 
     if(!res.ok) throw new Error('Failed to load the skills data')
 
