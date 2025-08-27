@@ -7,7 +7,7 @@ const ExpertiseSection = async () => {
   if (!expertiseList) return <p className='ex-error'>Failed to load the expertise data</p>
 
   return (
-    <div className='ex-container'>
+    <section className='ex-container'>
       <h1 className='ex-title'>Domain Expertise</h1>
       <div className='ex-wrapper'>
         {expertiseList.map((expertise, i) => (
@@ -25,7 +25,7 @@ const ExpertiseSection = async () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
