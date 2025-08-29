@@ -1,4 +1,4 @@
-import { TSkillGroup } from "./skills.type";
+import { TSkillGroup } from "./skill-group.type";
 
 
 export const getSkillsAction = async ():Promise<TSkillGroup | null> => {

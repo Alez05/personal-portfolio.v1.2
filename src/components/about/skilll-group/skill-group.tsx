@@ -1,10 +1,10 @@
-import { skillsData } from "@app/api/skills/skillsdata"
-import "./skills.css"
+import { SkillGroupData } from "@app/api/skills/skillsdata"
+import "./skill-group.css"
 
-const Skills = () => {
+const SkillGroup = () => {
   return (
     <section className="skills-section">
-      {skillsData.section.map((group, idx) => (
+      {SkillGroupData.section.map((group, idx) => (
         <div key={idx} className="skill-group">
           <h2 className="skill-title">{group.title}</h2>
           <p className="skill-subtitle">{group.subtitle}</p>
@@ -22,4 +22,4 @@ const Skills = () => {
   )
 }
 
-export { Skills }
+export { SkillGroup }
