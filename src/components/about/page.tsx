@@ -1,18 +1,18 @@
-import { Button, ContactCTA, Hero } from "@components/shared"
-import { Skills } from "./skills"
+import { ContactCTA } from "@components/shared"
+import { SkillGroup } from "./skilll-group"
 import { DownloadSection } from "./dwd-section"
 import { AboutHero } from "./about-hero"
-import { ExpertiseSection } from "./expertise-section"
+import { DomainExpertise } from "./expertise-section"
 import { CareerJourney } from "./carrer-journey"
 
 const About = () => {
   return (
     <div>
       <AboutHero />
-      <ExpertiseSection />
+      {/* <DownloadSection /> */}
       <CareerJourney />
-      <DownloadSection />
-      <Skills />
+      <SkillGroup />
+      <DomainExpertise />
       <ContactCTA />
     </div>
   )

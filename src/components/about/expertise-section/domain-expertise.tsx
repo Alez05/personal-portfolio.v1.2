@@ -1,8 +1,8 @@
 import { getExpertiseAction } from './action'
-import { TExpertise } from './expertise-section.type'
-import './expertise-section.css'
+import { TExpertise } from './domain-expertise.type'
+import './domain-expertise.css'
 
-const ExpertiseSection = async () => {
+const DomainExpertise = async () => {
   const expertiseList: TExpertise[] | null = await getExpertiseAction()
   if (!expertiseList) return <p className='ex-error'>Failed to load the expertise data</p>
 
@@ -29,4 +29,4 @@ const ExpertiseSection = async () => {
   )
 }
 
-export { ExpertiseSection }
+export { DomainExpertise }

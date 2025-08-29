@@ -2,7 +2,7 @@ import { TCareerJourney } from '@components/about';
 
 export const getCareerJourneyAction = async (): Promise<TCareerJourney[] | null>  => {
   try {
-    const res = await fetch('http://localhost:3000/api/career')
+    const res = await fetch('http://localhost:3000/api/career-journey')
     if(!res.ok) throw new Error('Failed to load Career data')
     const data: TCareerJourney[] = await res.json()
     return data

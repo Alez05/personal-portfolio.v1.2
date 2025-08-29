@@ -1,7 +1,7 @@
 // data/skillsData.ts
 import type { TSkillGroup } from "@components/about"
 
-export const skillsData: TSkillGroup = {
+export const SkillGroupData: TSkillGroup = {
   section: [
     {
       title: "Frontend Development",

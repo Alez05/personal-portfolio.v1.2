@@ -1,5 +1,5 @@
 // component
-export { ExpertiseSection } from './expertise-section'
+export { DomainExpertise } from './domain-expertise'
 
 // type
-export type { TExpertise } from './expertise-section.type'
+export type { TExpertise } from './domain-expertise.type'
