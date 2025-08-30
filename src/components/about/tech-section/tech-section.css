@@ -1,0 +1,34 @@
+.th-container {
+  background-color: #fff;
+}
+
+.th-wrapper {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers children horizontally */
+  justify-content: center; /* optional if you want vertical centering too */
+  text-align: center;     /* ensures text stays centered */
+}
+
+.th-title {
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.th-color {
+  background: linear-gradient(90deg, #1676dd, #060606);
+  -webkit-background-clip: text; /* for Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard */
+  color: transparent;
+}
+
+.th-description {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 600px;   /* updated */
+  margin: 0 auto;     /* centers description block */
+}
