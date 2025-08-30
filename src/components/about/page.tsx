@@ -1,9 +1,7 @@
 import { ContactCTA } from "@components/shared"
-import { SkillGroup } from "./skilll-group"
-import { DownloadSection } from "./dwd-section"
 import { AboutHero } from "./about-hero"
-import { DomainExpertise } from "./expertise-section"
 import { CareerJourney } from "./carrer-journey"
+import { TechSection } from "./tech-section"
 
 const About = () => {
   return (
@@ -11,8 +9,7 @@ const About = () => {
       <AboutHero />
       {/* <DownloadSection /> */}
       <CareerJourney />
-      <SkillGroup />
-      <DomainExpertise />
+      <TechSection />
       <ContactCTA />
     </div>
   )

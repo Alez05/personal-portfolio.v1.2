@@ -1,7 +1,7 @@
 /* Container */
 .ex-container {
   max-width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 3rem 1rem;
   text-align: center; /* center the title */

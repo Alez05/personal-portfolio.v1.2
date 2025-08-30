@@ -23,6 +23,7 @@ export const SkillGroupData: TSkillGroup = {
       subtitle: "Managing databases, APIs, authentication, and deployment pipelines.",
       skills: [
         { name: "Ruby", icon: "/icon/ruby.svg" },
+        { name: "Node.js", icon: "/icon/node-js.svg" },
         { name: "Rails", icon: "/icon/rubyonrails.svg" },
         { name: "SQL", icon: "/icon/sql-server.svg" },
         { name: "PostgreSQL", icon: "/icon/postgre.svg" },
@@ -53,7 +54,6 @@ export const SkillGroupData: TSkillGroup = {
         { name: "PHP", icon: "/icon/php.svg" },
         { name: "Laravel", icon: "/icon/laravel.svg" },
         { name: "Django", icon: "/icon/django.svg" },
-        { name: "Node.js", icon: "/icon/node-js.svg" },
         { name: "MongoDB", icon: "/icon/mongodb.svg" }
       ]
     }
