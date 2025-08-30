@@ -1,1 +1,1 @@
-export { TechSection } from './tech-expertise'
+export { TechSection } from './tech-section'
