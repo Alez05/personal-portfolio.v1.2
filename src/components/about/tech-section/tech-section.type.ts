@@ -3,5 +3,4 @@ export type TTechExpertise = {
   subtitle?: string,
   langTitle?: string,
   langContent: string[],
-
 }

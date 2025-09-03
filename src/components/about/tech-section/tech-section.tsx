@@ -1,5 +1,5 @@
-import { DomainExpertise } from '../expertise-section'
-import { SkillGroup } from '../skilll-group'
+import { DomainExpertise } from './expertise-section'
+import { SkillGroup } from './skilll-group'
 import './tech-section.css'
 
 const TechSection = () => {
