@@ -1,0 +1,24 @@
+.edu-container {
+  max-width: 1200px;   /* limit how wide the section grows */
+  margin: 0 auto;     /* center horizontally */
+  padding: 2rem 1rem; /* breathing room left/right */
+}
+
+.edu-title {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #3696fb, #282020);
+  -webkit-background-clip: text; /* Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* standard */
+  color: transparent;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.edu-description {
+  font-size: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem; /* center + spacing below */
+  text-align: center;  /* center the text itself */
+  line-height: 1.6;
+}
