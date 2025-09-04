@@ -8,6 +8,9 @@ const Education = async () => {
 
   return (
     <section className="ed-container">
+      <div className="ed-title-wrapper">
+        <h1 className="ed-title-edu">Education</h1>
+      </div>
       <div className="ed-list">
         {educationList.map((edu, idx) => (
           <div key={idx} className="ed-item">

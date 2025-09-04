@@ -1,3 +1,4 @@
+import { Courses, OngoingCourses } from "./courses"
 import "./education-section.css"
 import { Education } from "./education/education"
 
@@ -7,6 +8,8 @@ const EducationSection = () => {
       <h1 className="edu-title">Professional Development</h1>
       <p className="edu-description">Building a strong foundation in electrical and electronics engineering, with a focus on autonomous systems, computer vision, and AI-driven technologies.</p>
       <Education />
+      <Courses />
+      <OngoingCourses />
     </div>
   )
 }
