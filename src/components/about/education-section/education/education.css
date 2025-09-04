@@ -2,6 +2,20 @@
   padding: 2rem;
 }
 
+.ed-title-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ed-title-edu {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .ed-title {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
