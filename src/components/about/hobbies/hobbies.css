@@ -1,0 +1,99 @@
+.ho-container {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+
+.ho-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ho-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 in a row */
+  gap: 1.5rem;
+}
+
+.ho-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ho-icon {
+  font-size: 2rem;
+  color: #f7c948;
+  margin-bottom: 1rem;
+}
+
+.ho-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ho-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.ho-books {
+  display: flex;
+  flex-direction: column; /* ✅ books stacked inside */
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.ho-book {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.ho-book-img {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ho-book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.ho-book-status {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #00796b;
+}
+
+.ho-book-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.ho-book-author {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.ho-warning {
+  color: red;
+  text-align: center;
+  margin-top: 2rem;
+}

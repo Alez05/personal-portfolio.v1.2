@@ -1,6 +1,6 @@
 export type TTechExpertise = {
-  title?: string,
-  subtitle?: string,
-  langTitle?: string,
-  langContent: string[],
-}
+  title?: string;
+  subtitle?: string;
+  langTitle?: string;
+  langContent: string[];
+};

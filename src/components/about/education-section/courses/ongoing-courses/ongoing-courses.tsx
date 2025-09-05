@@ -31,9 +31,9 @@ const OngoingCourses = async () => {
                 {course.date && (
                   <span className="ong-date">
                     <i className={`fa-solid fa-calendar${course.icons?.date ? ` ${course.icons.date}` : ''}`} /> {course.date}
+                    {course.status && <span className={`ong-status ong-status-${course.status.toLowerCase()}`}>{course.status}</span>}
                   </span>
                 )}
-                {course.status && <span className={`ong-status ong-status-${course.status.toLowerCase()}`}>{course.status}</span>}
               </div>
             </div>
           </div>
