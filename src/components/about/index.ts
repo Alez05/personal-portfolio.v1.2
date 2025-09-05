@@ -1,19 +1,20 @@
 // pages
-export { About } from './page'
+export { About } from "./page";
 
 // components
-export { AboutHero } from './about-hero'
-export { DomainExpertise } from './tech-section/expertise-section'
-export { CareerJourney } from './carrer-journey'
-export { TechSection } from './tech-section'
-export { EducationSection } from './education-section'
-
+export { AboutHero } from "./about-hero";
+export { DomainExpertise } from "./tech-section/expertise-section";
+export { CareerJourney } from "./carrer-journey";
+export { TechSection } from "./tech-section";
+export { EducationSection } from "./education-section";
+export { Hobbies } from "./hobbies";
 
 // types
-export type { TCVData } from './curriculum'
-export type { TSkillGroup } from './tech-section/skilll-group'
-export type { TJourney } from './journey'
-export type { TExpertise } from './tech-section/expertise-section'
-export type { TCareerJourney } from './carrer-journey'
-export type { TEducation } from './education-section'
-export type { TCourses, TOngCourses } from './education-section'
+export type { TCVData } from "./curriculum";
+export type { TSkillGroup } from "./tech-section/skilll-group";
+export type { TJourney } from "./journey";
+export type { TExpertise } from "./tech-section/expertise-section";
+export type { TCareerJourney } from "./carrer-journey";
+export type { TEducation } from "./education-section";
+export type { TCourses, TOngCourses } from "./education-section";
+export type { THobbies } from './hobbies/hobbies.type'

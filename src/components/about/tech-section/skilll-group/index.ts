@@ -1,6 +1,5 @@
-export { SkillGroup } from './skill-group'
-
+export { SkillGroup } from "./skill-group";
 
 // types
 
-export {type TSkillGroup } from './skill-group.type'
+export { type TSkillGroup } from "./skill-group.type";

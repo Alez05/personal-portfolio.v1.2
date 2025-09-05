@@ -1,5 +1,5 @@
-import { SkillGroupData } from "@app/api/skills/skillsdata"
-import "./skill-group.css"
+import { SkillGroupData } from "@app/api/skills/skillsdata";
+import "./skill-group.css";
 
 const SkillGroup = () => {
   return (
@@ -12,7 +12,11 @@ const SkillGroup = () => {
             <div className="skill-grid">
               {group.skills.map((skill, i) => (
                 <div key={i} className="skill-card">
-                  <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon"
+                  />
                   <span className="skill-name">{skill.name}</span>
                 </div>
               ))}
@@ -21,7 +25,7 @@ const SkillGroup = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export { SkillGroup }
+export { SkillGroup };

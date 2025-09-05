@@ -6,9 +6,9 @@
   gap: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* centers children horizontally */
+  align-items: center; /* centers children horizontally */
   justify-content: center; /* optional if you want vertical centering too */
-  text-align: center;     /* ensures text stays centered */
+  text-align: center; /* ensures text stays centered */
 }
 
 .th-title {
@@ -29,6 +29,6 @@
 .th-description {
   font-size: 1rem;
   text-align: center;
-  max-width: 600px;   /* updated */
-  margin: 0 auto;     /* centers description block */
+  max-width: 600px; /* updated */
+  margin: 0 auto; /* centers description block */
 }
