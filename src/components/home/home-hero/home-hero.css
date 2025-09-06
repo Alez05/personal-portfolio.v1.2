@@ -1,0 +1,100 @@
+/* Container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 3rem;
+  gap: 2rem;
+  height: 100vh;
+}
+
+/* Left side */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #123458, #d4c9be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-role {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #d4c9be, #123458);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #030303;
+  max-width: 500px;
+}
+
+.hero-info p {
+  margin: 0.2rem 0;
+  color: #555;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #123458;
+  color: #123458;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #123458;
+  color: #f1efec;
+}
+
+/* Socials */
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-socials i {
+  font-size: 1.4rem;
+  color: #123458;
+  transition: color 0.3s ease;
+}
+
+.hero-socials i:hover {
+  color: #030303;
+}
+
+/* Right side */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
