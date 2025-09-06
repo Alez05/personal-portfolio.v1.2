@@ -17,4 +17,5 @@ export type { TExpertise } from "./tech-section/expertise-section";
 export type { TCareerJourney } from "./carrer-journey";
 export type { TEducation } from "./education-section";
 export type { TCourses, TOngCourses } from "./education-section";
-export type { THobbies } from './hobbies/hobbies.type'
+export type { THobbies } from "./hobbies/hobbies.type";
+export type { TLanguage } from "./education-section/";
