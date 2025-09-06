@@ -1,6 +1,7 @@
 import { Courses, OngoingCourses } from "./courses"
 import "./education-section.css"
 import { Education } from "./education/education"
+import { Languages } from "./language/language"
 
 const EducationSection = () => {
   return (
@@ -10,6 +11,7 @@ const EducationSection = () => {
       <Education />
       <Courses />
       <OngoingCourses />
+      <Languages />
     </div>
   )
 }
