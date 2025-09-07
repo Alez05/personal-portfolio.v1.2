@@ -11,3 +11,7 @@ export { ContactCTA } from './shared'
 //types
 
 export { type TCVData, type TSkillGroup, type TJourney } from './about'
+
+// home
+
+export type { TAboutSection } from './home'
