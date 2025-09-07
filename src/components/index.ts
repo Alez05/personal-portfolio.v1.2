@@ -1,17 +1,17 @@
-export { Home } from './home'
-export { About } from './about'
-export { Projects } from './projects'
-export { Contact } from './contact'
-export { Blog } from './blog'
-export { Feedback } from './feedback'
-export { Footer } from './shared'
-export { ContactCTA } from './shared'
-
+export { Home } from "./home";
+export { About } from "./about";
+export { Projects } from "./projects";
+export { Contact } from "./contact";
+export { Blog } from "./blog";
+export { Feedback } from "./feedback";
+export { Footer } from "./shared";
+export { ContactCTA } from "./shared";
 
 //types
 
-export { type TCVData, type TSkillGroup, type TJourney } from './about'
+export { type TCVData, type TSkillGroup, type TJourney } from "./about";
 
 // home
 
-export type { TAboutSection } from './home'
+export type { TAboutSection } from "./home";
+export type { THomeSkills } from "./home";
