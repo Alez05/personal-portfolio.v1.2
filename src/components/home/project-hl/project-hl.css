@@ -1,0 +1,51 @@
+.ph-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.ph-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ph-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ph-slider {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.ph-slide {
+  max-width: 320px;
+  flex-shrink: 0;
+}
+
+.ph-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ph-cta {
+  display: inline-block;
+  background: #123458;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.ph-cta:hover {
+  background: #0e2c46;
+}

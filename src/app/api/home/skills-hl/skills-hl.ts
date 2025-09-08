@@ -1,6 +1,6 @@
-import { THomeSkills } from "@components/home";
+import { TSkillsHl } from "@components/home";
 
-export const homeSkillsData: THomeSkills = {
+export const skillsHighlightsData: TSkillsHl= {
   title: "My Skills",
   description: "A showcase of some of the technologies I work with",
   skills: [
@@ -17,7 +17,7 @@ export const homeSkillsData: THomeSkills = {
     { name: "Rails", icon: "/icon/rubyonrails.svg" },
     { name: "Docker", icon: "/icon/docker.svg" },
     { name: "Git", icon: "/icon/git.svg" },
-    { name: "Figma", icon: "/icon/figma.svg" }
+    { name: "Figma", icon: "/icon/figma.svg" },
   ],
   skillLink: "/about",
 };

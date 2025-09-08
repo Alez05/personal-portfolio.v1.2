@@ -1,14 +1,16 @@
 import { ContactCTA } from "@components/shared"
 import { HomeHero } from "./home-hero"
-import { AboutSection } from "./about"
-import { HomeSkills } from "./home-skills"
+import { AboutSection } from "./about-hl"
+import { SkillsHighlights } from "./skills-hl"
+import { ProjectHighlight } from "./project-hl"
 
 const Home = () => {
   return (
     <div>
       <HomeHero />
       <AboutSection />
-      <HomeSkills />
+      <SkillsHighlights />
+      <ProjectHighlight />
       <ContactCTA />
     </div>
   )
