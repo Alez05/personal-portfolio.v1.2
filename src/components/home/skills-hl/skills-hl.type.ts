@@ -1,4 +1,4 @@
-export type THomeSkills = {
+export type TSkillsHl = {
   title?: string;
   description?: string;
   skills?: {

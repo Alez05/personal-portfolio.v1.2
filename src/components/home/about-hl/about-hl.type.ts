@@ -1,6 +1,6 @@
 import { TExpertise } from "@components/about";
 
-export type TAboutSection = {
+export type TAboutHl = {
   title?: string;
   description?: string;
   ctaLink?: string; // link to About page
