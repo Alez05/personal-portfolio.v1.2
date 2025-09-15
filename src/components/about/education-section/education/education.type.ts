@@ -1,9 +1,9 @@
 export type TEducation = {
   id?: string;
   degree?: string; // e.g. "Fullstack Bootcamp" or "High School Diploma"
-  degreeIcon?: string,
-  lewagonIcon?: string,
-  specialization?: string,
+  degreeIcon?: string;
+  lewagonIcon?: string;
+  specialization?: string;
   school?: string; // e.g. "Ironhack", "XYZ High School"
   emblem?: string; // path or url to logo/emblem
 

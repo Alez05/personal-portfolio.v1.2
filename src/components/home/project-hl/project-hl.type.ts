@@ -2,8 +2,8 @@ export type TProjectHl = {
   title?: string;
   description?: string;
   projects?: {
-    name?: string;
     image?: string;
+    link?: string;
   }[];
   cta?: {
     label?: string;

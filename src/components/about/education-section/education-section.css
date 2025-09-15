@@ -1,6 +1,6 @@
 .edu-container {
-  max-width: 1200px;   /* limit how wide the section grows */
-  margin: 0 auto;     /* center horizontally */
+  max-width: 1200px; /* limit how wide the section grows */
+  margin: 0 auto; /* center horizontally */
   padding: 2rem 1rem; /* breathing room left/right */
 }
 
@@ -19,6 +19,6 @@
   font-size: 1rem;
   max-width: 900px;
   margin: 0 auto 2rem; /* center + spacing below */
-  text-align: center;  /* center the text itself */
+  text-align: center; /* center the text itself */
   line-height: 1.6;
 }

@@ -1,8 +1,8 @@
-import { getSkillsHighlightAction } from "./action";
+import { getSkillHlAction } from "./action";
 import "./skills-hl.css";
 
-const SkillsHighlights = async () => {
-  const data = await getSkillsHighlightAction();
+const SkillHl = async () => {
+  const data = await getSkillHlAction();
 
   if (!data)
     return <section className="hs-section">Failed to load skills</section>;
@@ -36,4 +36,4 @@ const SkillsHighlights = async () => {
   );
 };
 
-export { SkillsHighlights };
+export { SkillHl };

@@ -1,5 +1,5 @@
 // components
-export { Hobbies } from './hobbies'
+export { Hobbies } from "./hobbies";
 
 // types
-export type { THobbies } from './hobbies.type'
+export type { THobbies } from "./hobbies.type";

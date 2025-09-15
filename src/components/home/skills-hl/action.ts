@@ -1,6 +1,6 @@
 import { TSkillsHl } from "./skills-hl.type";
 
-export const getSkillsHighlightAction = async (): Promise<TSkillsHl | null> => {
+export const getSkillHlAction = async (): Promise<TSkillsHl | null> => {
   try {
     const res = await fetch("http://localhost:3000/api/home/skills-hl");
     if (!res.ok) throw new Error("Failed toload the home-skills data");

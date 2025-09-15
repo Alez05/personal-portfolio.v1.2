@@ -1,11 +1,12 @@
 // Languages.tsx
-import './language.css'
-import { getLanguagesAction } from './action'
+import "./language.css";
+import { getLanguagesAction } from "./action";
 
 const Languages = async () => {
-  const languages = await getLanguagesAction()
+  const languages = await getLanguagesAction();
 
-  if (!languages) return <p className="lang-warning">Failed to load languages...</p>
+  if (!languages)
+    return <p className="lang-warning">Failed to load languages...</p>;
 
   return (
     <section className="lang-section">
@@ -22,7 +23,7 @@ const Languages = async () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export { Languages }
+export { Languages };

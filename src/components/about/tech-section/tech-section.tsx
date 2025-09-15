@@ -1,5 +1,5 @@
-import { DomainExpertise } from "./expertise-section";
-import { SkillGroup } from "./skilll-group";
+import { Expertise } from "./expertise";
+import { SkillSet } from "./skill-set";
 import "./tech-section.css";
 
 const TechSection = () => {
@@ -14,8 +14,8 @@ const TechSection = () => {
           and specialized domains in autonomous systems and computer vision.
         </p>
       </div>
-      <DomainExpertise />
-      <SkillGroup />
+      <Expertise />
+      <SkillSet />
     </section>
   );
 };

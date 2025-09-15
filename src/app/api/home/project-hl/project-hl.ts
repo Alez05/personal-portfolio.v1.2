@@ -5,9 +5,9 @@ export const projectsHighlightData: TProjectHl = {
   description:
     "Get inspired by completed projects: from sleek business websites to advanced web applications.",
   projects: [
-    { name: "Eyefine", image: "/projects/eyefine.png" },
-    { name: "Portfolio", image: "/projects/portfolio.png" },
-    { name: "ShopApp", image: "/projects/shopapp.png" },
+    { image: "/projects/eyefine.png", link: "/projects/eyefine" },
+    { image: "/projects/portfolio.png", link: "/projects/portfolio" },
+    { image: "/projects/shopapp.png", link: "/projects/shopapp" },
   ],
   cta: {
     label: "View Projects",

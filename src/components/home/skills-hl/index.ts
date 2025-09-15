@@ -1,5 +1,5 @@
-// types
-export type { TSkillsHl } from './skills-hl.type';
-
 // components
-export { SkillsHighlights } from './skills-hl'
+export { SkillHl } from "./skills-hl";
+
+// types
+export type { TSkillsHl } from "./skills-hl.type";
