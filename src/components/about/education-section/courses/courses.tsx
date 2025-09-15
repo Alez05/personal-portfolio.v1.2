@@ -10,7 +10,9 @@ const Courses = async () => {
   return (
     <section className="co-section">
       <div className="co-title-wrapper">
-        <h1 className="co-title"><i className="fa-solid fa-check co-title-icon"></i> Completed Courses</h1>
+        <h1 className="co-title">
+          <i className="fa-solid fa-check co-title-icon"></i> Completed Courses
+        </h1>
       </div>
       <div className="co-container">
         {coursesList.map((course) => (

@@ -1,28 +1,35 @@
 // components/home/AboutSection.tsx
 import "./about-hl.css";
-import { DomainExpertise } from "@components/about";
-import { getAboutHighlightsAction } from "./action";
+import { Expertise } from "@components/about";
+import { getAboutHlAction } from "./action";
 
-const AboutSection = async () => {
-  const about = await getAboutHighlightsAction();
+const AboutHl = async () => {
+  const about = await getAboutHlAction();
 
-  if (!about)
-    return <section className="ha-about-section">No about data</section>;
+  if (!about) {
+    return (
+      <section className="ah-section">
+        <div className="ah-container">
+          <p className="ah-error">Failed to load about section</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className="ha-about-section">
-      <div className="ha-about-content">
-        <h2 className="ha-about-title">{about.title}</h2>
+    <section className="ah-section">
+      <div className="ah-content">
+        <h2 className="ah-title">{about.title}</h2>
         {about.description && (
-          <p className="ha-about-description">{about.description}</p>
+          <p className="ah-description">{about.description}</p>
         )}
 
-        <div className="ha-about-carousel">
-          <DomainExpertise />
+        <div className="ah-carousel">
+          <Expertise />
         </div>
 
         {about.ctaLink && (
-          <a href={about.ctaLink} className="ha-about-cta">
+          <a href={about.ctaLink} className="ah-cta">
             Learn More
           </a>
         )}
@@ -31,4 +38,4 @@ const AboutSection = async () => {
   );
 };
 
-export { AboutSection };
+export { AboutHl };

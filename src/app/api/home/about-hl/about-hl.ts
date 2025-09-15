@@ -1,6 +1,6 @@
 // aboutSection.ts
 import type { TAboutHl } from "@components/home";
-import { DomainExpertiseData } from "../../domain-expertise/expertise";
+import { DomainExpertiseData } from "../../about/domain-expertise/expertise";
 
 export const AboutSectionData: TAboutHl = {
   title: "About Me",

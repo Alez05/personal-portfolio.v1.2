@@ -1,50 +1,60 @@
-.ha-about-section {
-  /* height: 100vh; full viewport */
+.ah-section {
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-  text-align: center;      /* everything inside is centered */
+  text-align: center;
   box-sizing: border-box;
 }
 
-.ha-about-content {
+.ah-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ah-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem; /* spacing between title, description, carousel, button */
+  gap: 2rem;
 }
 
-.ha-about-title {
+.ah-title {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.ha-about-description {
+.ah-description {
   font-size: 1.125rem;
   line-height: 1.6;
-  max-width: 700px; /* optional: keeps text readable */
+  max-width: 700px;
 }
 
-.ha-about-carousel {
+.ah-carousel {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
   width: 100%;
-  justify-content: center; /* center the carousel itself */
+  justify-content: center;
 }
 
-.ha-about-cta {
+.ah-cta {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #0b5ff0;
   color: #FEFAE0;
   text-decoration: none;
   border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
-.ha-about-cta:hover {
+.ah-cta:hover {
   background-color: #626F47;
+}
+
+.ah-error {
+  color: red;
+  font-size: 1rem;
 }

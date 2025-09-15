@@ -3,7 +3,7 @@
   padding: 2rem;
 }
 
-.co-title-wrapper{
+.co-title-wrapper {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -17,7 +17,7 @@
   gap: 0.5rem;
 }
 
-.co-title-icon{
+.co-title-icon {
   width: 50px;
   height: 50px;
   background: #5cef5a;

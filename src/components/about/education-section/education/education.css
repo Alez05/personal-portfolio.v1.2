@@ -2,7 +2,7 @@
   padding: 2rem;
 }
 
-.ed-title-wrapper{
+.ed-title-wrapper {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -36,14 +36,13 @@
   border-left: 3px solid #123458;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
 .ed-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .ed-header {
@@ -141,7 +140,7 @@
 }
 
 .ed-keycontent li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -1rem;
   top: 0.5rem;

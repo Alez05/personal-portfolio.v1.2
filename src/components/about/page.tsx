@@ -1,6 +1,6 @@
 import { ContactCTA } from "@components/shared"
 import { AboutHero } from "./about-hero"
-import { CareerJourney } from "./carrer-journey"
+import { CareerJourney } from "./career-journey"
 import { TechSection } from "./tech-section"
 import { EducationSection } from "./education-section"
 import { Hobbies } from "./hobbies"

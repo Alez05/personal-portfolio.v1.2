@@ -1,12 +1,14 @@
-import { getOngoingCAction } from './action';
-import type { TOngCourses } from './ongoing-courses.type';
-import './ongoing-courses.css';
+import { getOngoingCAction } from "./action";
+import type { TOngCourses } from "./ongoing-courses.type";
+import "./ongoing-courses.css";
 
 const OngoingCourses = async () => {
   const coursesList: TOngCourses[] | null = await getOngoingCAction();
 
   if (!coursesList)
-    return <p className="ong-warning">Failed to load the Ongoing Courses data.</p>;
+    return (
+      <p className="ong-warning">Failed to load the Ongoing Courses data.</p>
+    );
 
   return (
     <section className="ong-section">
@@ -17,7 +19,7 @@ const OngoingCourses = async () => {
       </div>
 
       <div className="ong-cards-container">
-        {coursesList.map(course => (
+        {coursesList.map((course) => (
           <div key={course.id} className="ong-card">
             <div className="ong-card-header">
               {course.nameIcon && (
@@ -30,8 +32,19 @@ const OngoingCourses = async () => {
                 <p className="ong-provider">{course.provider}</p>
                 {course.date && (
                   <span className="ong-date">
-                    <i className={`fa-solid fa-calendar${course.icons?.date ? ` ${course.icons.date}` : ''}`} /> {course.date}
-                    {course.status && <span className={`ong-status ong-status-${course.status.toLowerCase()}`}>{course.status}</span>}
+                    <i
+                      className={`fa-solid fa-calendar${
+                        course.icons?.date ? ` ${course.icons.date}` : ""
+                      }`}
+                    />{" "}
+                    {course.date}
+                    {course.status && (
+                      <span
+                        className={`ong-status ong-status-${course.status.toLowerCase()}`}
+                      >
+                        {course.status}
+                      </span>
+                    )}
                   </span>
                 )}
               </div>

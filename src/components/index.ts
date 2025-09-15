@@ -1,3 +1,4 @@
+// components
 export { Home } from "./home";
 export { About } from "./about";
 export { Projects } from "./projects";
@@ -7,11 +8,21 @@ export { Feedback } from "./feedback";
 export { Footer } from "./shared";
 export { ContactCTA } from "./shared";
 
-//types
+export type { TSkillSet} from "./about";
 
-export { type TCVData, type TSkillGroup, type TJourney } from "./about";
+// about
+
+
+// blog
+
+// contact
 
 // home
+export type { THero } from "./home";
+export type { TAboutHl} from "./home";
+export type { TSkillsHl } from "./home";
+export type { TProjectHl } from './home'
+export type { TBlogHl } from './home'
 
-export type { TAboutSection } from "./home";
-export type { THomeSkills } from "./home";
+
+// project
