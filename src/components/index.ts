@@ -8,10 +8,9 @@ export { Feedback } from "./feedback";
 export { Footer } from "./shared";
 export { ContactCTA } from "./shared";
 
-export type { TSkillSet} from "./about";
+export type { TSkillSet } from "./about";
 
 // about
-
 
 // blog
 
@@ -21,16 +20,18 @@ export type { TSkillSet} from "./about";
 
 // type
 export type { THero } from "./home";
-export type { TAboutHl} from "./home";
+export type { TAboutHl } from "./home";
 export type { TSkillsHl } from "./home";
-export type { TProjectHl } from './home'
-export type { TBlogHl } from './home'
+export type { TProjectHl } from "./home";
+export type { TBlogHl } from "./home";
 
 // components
 
 // project
 
 // type
+export type { TProjectCard } from "./projects";
 
 // components
-export { ProjectSection } from './projects';
+export { ProjectSection } from "./projects";
+export { ProjectCard } from "./projects";
