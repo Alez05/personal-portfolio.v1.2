@@ -18,11 +18,19 @@ export type { TSkillSet} from "./about";
 // contact
 
 // home
+
+// type
 export type { THero } from "./home";
 export type { TAboutHl} from "./home";
 export type { TSkillsHl } from "./home";
 export type { TProjectHl } from './home'
 export type { TBlogHl } from './home'
 
+// components
 
 // project
+
+// type
+
+// components
+export { ProjectSection } from './projects';
