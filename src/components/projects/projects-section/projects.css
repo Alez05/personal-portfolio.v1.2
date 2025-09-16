@@ -1,0 +1,37 @@
+.prs-container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prs-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.prs-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #1676dd, #060606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prs-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.prs-content {
+  margin-top: 2rem;
+}
+
+.prs-error {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}

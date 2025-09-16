@@ -10,20 +10,20 @@ export { ContactCTA } from "./shared";
 
 export type { TSkillSet } from "./about";
 
-// about
+// ABOUT FILE
 
-// blog
-
+// BLOG FILE
 // components
-export { HeroBl } from './blog';
+export { HeroBl } from "./blog";
+export { BlogSection } from "./blog";
 
 // types
-export type { THeroBl } from './blog';
+export type { THeroBl } from "./blog";
+export type { TBlogSection } from './blog'
 
-// contact
+// CONTACT FILE
 
-// home
-
+// HOME FILE
 // type
 export type { THero } from "./home";
 export type { TAboutHl } from "./home";
@@ -33,11 +33,13 @@ export type { TBlogHl } from "./home";
 
 // components
 
-// project
-
+// PROJECT FILE
 // type
+export type { THeroPr } from "./projects";
 export type { TProjectCard } from "./projects";
+export type { TProjectSection } from "./projects";
 
 // components
+export { HeroPr } from "./projects";
 export { ProjectSection } from "./projects";
 export { ProjectCard } from "./projects";

@@ -1,16 +1,29 @@
 import "./projects.css";
+import { getProjectSectionAction } from "./action";
+import { TProjectSection } from "./projects.type";
 
-const ProjectSection = () => {
+const ProjectSection = async ({ children }:TProjectSection) => {
+  const data = await getProjectSectionAction();
+
+  if (!data) {
+    return (
+      <section className="prs-container">
+        <p className="prs-error">Failed to load project section</p>
+      </section>
+    );
+  }
+
   return (
-    <div>
-      <h1>Projects section</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
-        accusantium natus adipisci debitis nesciunt quaerat nisi quo molestiae
-        aspernatur? Quidem totam laudantium beatae tempore provident explicabo
-        ipsa. Voluptatum, asperiores possimus.
-      </p>
-    </div>
+    <section className="prs-container">
+      <div className="prs-header">
+        {data.title && <h2 className="prs-title">{data.title}</h2>}
+        {data.description && (
+          <p className="prs-description">{data.description}</p>
+        )}
+      </div>
+
+      <div className="prs-content">{children}</div>
+    </section>
   );
 };
 
