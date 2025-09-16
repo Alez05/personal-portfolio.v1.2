@@ -1,0 +1,63 @@
+.blh-container {
+  padding: 6rem 2rem 4rem 2rem;
+  background-image: url('../../../../public/image/profile.png');
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blh-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.blh-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1676dd, #060606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.blh-description {
+  max-width: 600px;
+  font-size: 1rem;
+  color: #030303;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+.blh-button {
+  background-color: #1676dd;
+  color: #fff;
+  border-radius: 10px;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.blh-button:hover {
+  background-color: #0b4fa0;
+}
+
+.blh-error {
+  color: red;
+  font-weight: 600;
+}

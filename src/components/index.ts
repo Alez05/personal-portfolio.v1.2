@@ -14,6 +14,12 @@ export type { TSkillSet } from "./about";
 
 // blog
 
+// components
+export { HeroBl } from './blog';
+
+// types
+export type { THeroBl } from './blog';
+
 // contact
 
 // home
