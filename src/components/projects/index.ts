@@ -9,3 +9,4 @@ export { ProjectCard } from "./project-card";
 // types
 export type { THeroPr } from "./hero-pr";
 export type { TProjectCard } from "./project-card";
+export type { TProjectSection } from "./projects-section";
