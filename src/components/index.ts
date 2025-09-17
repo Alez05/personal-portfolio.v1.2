@@ -16,10 +16,12 @@ export type { TSkillSet } from "./about";
 // components
 export { HeroBl } from "./blog";
 export { BlogSection } from "./blog";
+export { BlogCard } from "./blog";
 
 // types
 export type { THeroBl } from "./blog";
-export type { TBlogSection } from './blog'
+export type { TBlogSection } from "./blog";
+export type { TBlogCard } from "./blog";
 
 // CONTACT FILE
 
