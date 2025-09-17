@@ -2,7 +2,7 @@ import "./blog-card.css";
 import { getBlogCardAction } from "./action";
 
 const BlogCard = async () => {
-  const data = await getBlogCardAction(); // TBlogCard[] | null
+  const data = await getBlogCardAction();
 
   if (!data || data.length === 0) {
     return (
@@ -25,14 +25,13 @@ const BlogCard = async () => {
           )}
 
           <div className="bcs-content">
-            {blog.name && <h3 className="bcs-title">{blog.name}</h3>}
+            {blog.name && blog.link && (
+              <a href={blog.link} className="bcs-title-link">
+                {blog.name}
+              </a>
+            )}
             {blog.description && (
               <p className="bcs-desc">{blog.description}</p>
-            )}
-            {blog.cta?.label && blog.cta?.link && (
-              <a href={blog.cta.link} className="bcs-cta">
-                {blog.cta.label} <span className="bcs-cta-arrow">→</span>
-              </a>
             )}
           </div>
         </article>
