@@ -19,6 +19,7 @@
   gap: 1rem;
   transition: transform 0.2s ease;
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 .bcs-card:hover {
@@ -29,48 +30,37 @@
   width: 100%;
   height: 280px;
   border-radius: 10px;
-  object-fit: unset; /* show image as-is */
+  object-fit: unset;
 }
 
 .bcs-content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  text-align: left; /* left align text */
+  text-align: left;
 }
 
-.bcs-title {
+.bcs-title-link {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #0b2b4a; /* slightly darker gray/blueish */
-  margin: 0;
-  text-align: left;
+  color: #0b2b4a; /* default dark */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Title turns red when the card is hovered */
+.bcs-card:hover .bcs-title-link {
+  color: #b91c1c;
+}
+
+.bcs-title-arrow {
+  font-size: 1rem;
+  margin-left: 0.25rem;
 }
 
 .bcs-desc {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #4b5563; /* grayish for contrast */
+  color: #4b5563;
   margin: 0.5rem 0;
-  text-align: left;
-}
-
-.bcs-cta {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #b91c1c;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin-top: 0.5rem;
-  text-align: left;
-}
-
-.bcs-cta:hover {
-  text-decoration: underline;
-}
-
-.bcs-cta-arrow {
-  font-size: 1rem;
 }
