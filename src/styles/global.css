@@ -6,30 +6,46 @@
 /* ========== ROOT VARIABLES ========== */
 /* LIGHT THEME */
 :root {
-  --bg-light: #F2F2F2;     /* main background */
-  --surface-light: #e2e2e2; /* cards, hero sections */
-  --accent-light: #DDDDDD;  /* links, buttons */
-  --text-light: #000000;    /* nav, footer, heavy text */
+  /* COLORS */
+  --primary-light: #295bf0;   /* main blue */
+  --primary-light-hover: #66B1D3; /* hover state */
+  --accent-light: #D94F4F;    /* accent red */
+  --accent-light-hover: #E05A5A; /* hover state */
+  --bg-light: #F5F9FB;        /* background */
+  --surface-light: #FFFFFF;   /* cards, hero sections */
+  --text-primary-light: #1A1A1A;
+  --text-secondary-light: #5A5A5A;
+  --border-light: #E0E0E0;
 
-  --font-roboto-slab: 'Roboto Slab', serif;
+  /* TYPOGRAPHY */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
 
+  /* ALIASES */
+  --blueish: var(--primary-light);
+  --redish: var(--accent-light);
   --whiteish: var(--bg-light);
   --creamish: var(--surface-light);
-  --grayish: var(--accent-light);
-  --blackish: var(--text-light);
+  --blackish: var(--text-primary-light);
+  --grayish: var(--text-secondary-light);
 }
 
 /* DARK THEME */
 [data-theme='dark'] {
-  --bg-dark: #000000;       /* background */
-  --surface-dark: #B6B09F;  /* cards, hero sections */
-  --accent-dark: #EAE4D5;   /* links, buttons */
-  --text-dark: #F2F2F2;     /* nav text, body text */
+  --primary-dark: #66B1D3;
+  --accent-dark: #E05A5A;
+  --bg-dark: #0D1117;
+  --surface-dark: #161B22;
+  --text-primary-dark: #E6EDF3;
+  --text-secondary-dark: #9DA5B4;
+  --border-dark: #30363D;
 
+  --blueish: var(--primary-dark);
+  --redish: var(--accent-dark);
   --whiteish: var(--bg-dark);
   --creamish: var(--surface-dark);
-  --blueish: var(--accent-dark);
-  --blackish: var(--text-dark);
+  --blackish: var(--text-primary-dark);
+  --grayish: var(--text-secondary-dark);
 }
 
 /* ========== RESET ========== */
@@ -47,34 +63,31 @@ html {
 
 html,
 body {
-  font-family: var(--font-roboto-slab);
-  background-color: #fff;
+  font-family: var(--font-body);
+  background-color: var(--whiteish);
   color: var(--blackish);
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--grayish);
+}
+
 /* ========== LINKS ========== */
 a {
-  color: var(--blueish);
+  color: var(--redish);
   text-decoration: none;
   position: relative;
   transition: color 0.2s ease;
-}
-
-a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0%;
-  height: 2px;
-  background-color: var(--blueish);
-  transition: width 0.3s ease;
-}
-
-a:hover::after {
-  width: 100%;
 }
 
 /* ========== NEXT.JS CLEANUP ========== */
