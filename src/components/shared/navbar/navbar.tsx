@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <nav className='navbar' role="navigation" aria-label="Main navigation">
-      <a className='nav-logo' href="/">Alexandru Cercel</a>
+      <a className='nav-logo' href="/"><span className='nav-logo-a'>A</span>lexandru Cercel</a>
 
       <ul className='nav-links'>
         <li><a href="/" className={isActive('/')}>Home</a></li>
         <li><a href="/about" className={isActive('/about')}>About</a></li>
         <li><a href="/projects" className={isActive('/projects')}>Projects</a></li>
         <li><a href="/blog" className={isActive('/blog')}>Blog</a></li>
-        <li><a href="/contact" className={isActive('/contact')}>Contact</a></li>
+        <li><a href="/contact" className={isActive('/contact')}>Hire me</a></li>
       </ul>
 
       <button
@@ -36,7 +36,7 @@ const Navbar = () => {
         <a href="/about" className={isActive('/about')} onClick={() => setIsMenuOpen(false)}>About</a>
         <a href="/projects" className={isActive('/projects')} onClick={() => setIsMenuOpen(false)}>Projects</a>
         <a href="/blog" className={isActive('/blog')} onClick={() => setIsMenuOpen(false)}>Blog</a>
-        <a href="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Contact</a>
+        <a href="/contact" className={isActive('/contact')} onClick={() => setIsMenuOpen(false)}>Hire me</a>
       </div>
     </nav>
   )

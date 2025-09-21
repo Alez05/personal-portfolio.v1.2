@@ -1,28 +1,25 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import { Roboto_Slab } from "next/font/google";
+import { Inter, Work_Sans } from "next/font/google";
 import '@styles/global.css'
 import { Footer, Navbar } from "@components/shared";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Inter for headings
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400","500","600","700","800","900"]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Work Sans for body
+const workSans = Work_Sans({
   subsets: ["latin"],
-});
-
-const roboto = Roboto_Slab({
-  subsets: ['latin'],
-  weight: ["100","200", "300","400", "500", "600", "700", "800", "900" ],
-  variable: '--font-roboto-slab'
+  variable: "--font-work-sans",
+  weight: ["400","500","600","700","800","900"]
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${roboto.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en-GB" className={`${inter.variable} ${workSans.variable}`}>
       <body>
         {children}
         <Navbar />
