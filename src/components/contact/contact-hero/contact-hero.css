@@ -51,3 +51,76 @@
 .ch-button:hover {
   background-color: #0f2c46;
 }
+
+/* Aligns width & margins with navbar */
+.hmh-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  width: 90%; /* same as navbar */
+  max-width: 1400px;
+  margin: 6rem auto 2rem; /* top margin = navbar offset (1rem) + spacing, auto horizontal centers */
+
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text content */
+.hmh-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hmh-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hmh-color {
+  color: var(--blueish);
+}
+
+.hmh-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--grayish);
+  max-width: 500px;
+}
+
+.hmh-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--blueish);
+  color: var(--whiteish);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hmh-button:hover {
+  background-color: var(--primary-light-hover);
+}
+
+/* Image wrapper */
+.hmh-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1023px) {
+  .hmh-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 5rem; /* reduce on smaller screens */
+  }
+  .hmh-image {
+    margin-bottom: 2rem;
+  }
+}

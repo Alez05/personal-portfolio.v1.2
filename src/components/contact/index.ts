@@ -1,5 +1,9 @@
-export { Contact } from './contact'
-export { ContactForm } from './contact-form'
-export { SocialBox } from './social-box'
-export { Opportunities } from './opportunities'
-export { ContactHero } from './contact-hero';
+// components
+export { Contact } from "./contact";
+export { ContactForm } from "./contact-form";
+export { SocialBox } from "./social-box";
+export { Opportunities } from "./opportunities";
+export { ContactHero } from "./contact-hero";
+
+// types
+export type { TContactHr } from "./contact-hero";
