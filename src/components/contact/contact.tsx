@@ -3,11 +3,13 @@ import { ContactForm } from "./contact-form"
 import { SocialBox } from "./social-box"
 import { Opportunities } from "./opportunities"
 import { ContactHero } from "./contact-hero"
+import { ContactBody } from './contact-body'
 
 const Contact = () => {
   return (
     <div>
       <ContactHero />
+      <ContactBody />
       <div className="p-10 text-center text-2xl">
         <div className="contact-container">
           {/* Socials */}

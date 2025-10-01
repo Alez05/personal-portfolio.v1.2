@@ -1,0 +1,68 @@
+.cb-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  color: #030303;
+}
+
+.cb-intro {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.cb-mid {
+  margin-bottom: 2rem;
+}
+
+.cb-sections {
+  margin-bottom: 2rem;
+}
+
+.cb-section {
+  margin-bottom: 1.5rem;
+}
+
+.cb-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #123458; /* subtle accent */
+}
+
+.cb-section-content {
+  margin: 0;
+}
+
+.cb-outro {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.cb-link {
+  color: #123458;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cb-link:hover {
+  opacity: 0.8;
+}
+
+.cb-email-link {
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cb-email-link:hover {
+  opacity: 0.8;
+}
+
+.cb-error {
+  text-align: center;
+  color: red;
+}
