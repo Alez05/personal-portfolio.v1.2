@@ -25,9 +25,11 @@ export type { TBlogCard } from "./blog";
 
 // CONTACT FILE
 // components
+export { ContactBody } from './contact';
 
 // types
 export type { TContactHr } from "./contact";
+export type { TContactBody } from './contact';
 
 // HOME FILE
 // type
