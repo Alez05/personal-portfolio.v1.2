@@ -1,59 +1,4 @@
-/* Hero/contact container */
-.ch-container {
-  background-image: url('../../../../public/image/contact.png');
-  padding: 6rem 2rem 4rem 2rem; /* extra top padding for navbar space */
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 100vh;
-  margin: 0;
-  gap: 2rem;
-}
-
-/* Title */
-.ch-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.ch-color {
-  color: #2e87e7; /* dark blue */
-}
-
-/* Description */
-.ch-description {
-  max-width: 600px;
-  font-size: 1rem;
-  color: #030303; /* near black */
-  line-height: 1.6;
-  padding-bottom: 2rem;
-}
-
-/* Button */
-.ch-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  width: 200px;
-  background-color: #228dff; /* dark blue */
-  color: #F1EFEC; /* light text */
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.ch-button:hover {
-  background-color: #0f2c46;
-}
-
-/* Aligns width & margins with navbar */
+/* ===== Hero Container ===== */
 .hmh-container {
   display: flex;
   align-items: center;
@@ -62,13 +7,16 @@
 
   width: 90%; /* same as navbar */
   max-width: 1400px;
-  margin: 6rem auto 2rem; /* top margin = navbar offset (1rem) + spacing, auto horizontal centers */
+  margin: 0 auto;
+  padding: 6rem 2rem 2rem; /* top padding = navbar offset */
 
-  padding: 2rem;
+  min-height: 100vh; /* full viewport height */
+  box-sizing: border-box;
+
   flex-wrap: wrap;
 }
 
-/* Text content */
+/* ===== Text Content ===== */
 .hmh-content {
   flex: 1;
   min-width: 280px;
@@ -106,22 +54,103 @@
   background-color: var(--primary-light-hover);
 }
 
-/* Image wrapper */
+/* ===== Image Wrapper ===== */
 .hmh-image {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 280px;
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 1023px) {
+
+/* Mobile (phones) */
+@media (max-width: 767px) {
   .hmh-container {
     flex-direction: column-reverse;
     text-align: center;
-    margin-top: 5rem; /* reduce on smaller screens */
+    padding-top: 5rem;
+    min-height: auto; /* allow content to expand naturally */
   }
+
+  .hmh-title {
+    font-size: 2rem;
+  }
+
+  .hmh-subtitle {
+    font-size: 1rem;
+  }
+
   .hmh-image {
     margin-bottom: 2rem;
+    max-height: 50vh;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hmh-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 5rem;
+    min-height: auto;
+  }
+
+  .hmh-title {
+    font-size: 2.25rem;
+  }
+
+  .hmh-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hmh-image {
+    margin-bottom: 2rem;
+    max-height: 55vh;
+  }
+}
+
+/* Laptop / Small Desktop */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .hmh-title {
+    font-size: 2.5rem;
+  }
+
+  .hmh-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .hmh-container {
+    gap: 3rem;
+    padding: 6rem 5% 2rem;
+  }
+
+  .hmh-title {
+    font-size: 3rem;
+  }
+
+  .hmh-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1920px) {
+  .hmh-container {
+    padding: 6rem 8% 2rem;
+  }
+
+  .hmh-title {
+    font-size: 3.25rem;
+  }
+
+  .hmh-subtitle {
+    font-size: 1.35rem;
   }
 }

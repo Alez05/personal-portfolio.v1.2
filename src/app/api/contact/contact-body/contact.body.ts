@@ -1,3 +1,4 @@
+// data/contact-body-data.ts
 import { TContactBody } from "@components/contact";
 
 export const contactBodyData: TContactBody = {
@@ -19,8 +20,16 @@ export const contactBodyData: TContactBody = {
     },
   ],
 
-  outro:
-    "If this sounds like something you’re interested in, fill out the form below or send me an email directly.",
+  outro: "If this sounds like something you’re interested in, ",
 
-  email: "alex@example.com", // replace with your actual email or fetch from env
+  links: {
+    form: {
+      label: "fill out the form below",
+      href: "#contact-form",
+    },
+    email: {
+      label: "send me an email",
+      address: "alex@example.com",
+    },
+  },
 };

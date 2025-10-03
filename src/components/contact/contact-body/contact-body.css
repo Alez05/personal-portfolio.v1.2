@@ -1,10 +1,14 @@
+/* ===== Contact Body Container ===== */
 .cb-container {
-  max-width: 800px;
+  width: 90%;
+  max-width: 1200px; /* allow it to scale wider */
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
   font-size: 1.125rem;
   color: #030303;
+  min-height: 100vh; /* same full-height feel as hero */
+  box-sizing: border-box;
 }
 
 .cb-intro {
@@ -65,4 +69,52 @@
 .cb-error {
   text-align: center;
   color: red;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 767px) {
+  .cb-container {
+    width: 95%;
+    max-width: 600px;
+    padding: 1.5rem;
+    min-height: auto; /* allow natural height on phones */
+  }
+  .cb-intro {
+    font-size: 1.15rem;
+  }
+  .cb-section-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cb-container {
+    width: 92%;
+    max-width: 900px;
+    padding: 2rem;
+  }
+  .cb-intro {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .cb-container {
+    width: 90%;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cb-container {
+    width: 85%;
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cb-container {
+    width: 80%;
+    max-width: 1600px;
+  }
 }

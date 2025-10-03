@@ -6,6 +6,7 @@ export { Contact } from "./contact";
 export { Blog } from "./blog";
 export { Feedback } from "./feedback";
 export { Footer } from "./shared";
+export { Navbar } from "./shared";
 export { ContactCTA } from "./shared";
 
 export type { TSkillSet } from "./about";
