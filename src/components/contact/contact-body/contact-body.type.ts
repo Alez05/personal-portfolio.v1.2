@@ -1,3 +1,4 @@
+// types/contact-body.ts
 export type TContactBody = {
   intro?: string;
   mid?: string;
@@ -6,5 +7,14 @@ export type TContactBody = {
     content?: string;
   }[];
   outro?: string;
-  email?: string;
+  links?: {
+    form?: {
+      label: string;
+      href: string;
+    };
+    email?: {
+      label: string;
+      address: string;
+    };
+  };
 };

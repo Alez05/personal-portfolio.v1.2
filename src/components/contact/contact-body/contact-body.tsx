@@ -13,7 +13,7 @@ const ContactBody = async () => {
     );
   }
 
-  const { intro, mid, sections, outro, email } = data;
+  const { intro, mid, sections, outro, links } = data;
 
   return (
     <section className="cb-container">
@@ -32,21 +32,23 @@ const ContactBody = async () => {
         </div>
       )}
 
-      {outro && (
+      {(outro || links) && (
         <p className="cb-outro">
-          {outro.replace("fill out the form below", "")}
-          <a href="#contact-form" className="cb-link">
-            fill out the form below
-          </a>
-          {" or send me an "}
-          {email ? (
-            <a href={`mailto:${email}`} className="cb-email-link">
-              email
-            </a>
-          ) : (
-            "email"
+          {outro}
+          {links?.form && (
+            <>
+              <a href={links.form.href} className="cb-link">
+                {links.form.label}
+              </a>
+              {" or "}
+            </>
           )}
-          {" directly."}
+          {links?.email && (
+            <a href={`mailto:${links.email.address}`} className="cb-email-link">
+              {links.email.label}
+            </a>
+          )}
+          {links?.email && " directly."}
         </p>
       )}
     </section>
