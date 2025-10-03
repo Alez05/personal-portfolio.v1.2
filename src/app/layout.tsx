@@ -1,7 +1,7 @@
 import { Inter, Work_Sans } from "next/font/google";
-import "@styles/global.css";
+import "../styles/index";
 import { Footer, Navbar } from "../components/shared/index";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Inter for headings
 const inter = Inter({
