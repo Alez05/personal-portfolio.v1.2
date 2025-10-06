@@ -1,4 +1,4 @@
-import type { THeroBl } from "@components/blog";
+import type { THeroBl } from "../../../../components";
 
 export const blogsHeroData: THeroBl = {
   title: "Insights & Stories",

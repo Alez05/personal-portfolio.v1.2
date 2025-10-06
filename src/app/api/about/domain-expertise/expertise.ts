@@ -1,4 +1,4 @@
-import type {  TExpertise } from "@components/about"
+import type {  TExpertise } from "../../../../components"
 
 export const DomainExpertiseData: TExpertise[] = [
   {

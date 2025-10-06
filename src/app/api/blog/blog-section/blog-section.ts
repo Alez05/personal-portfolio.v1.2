@@ -1,4 +1,4 @@
-import type { TBlogSection } from "@components/blog";
+import type { TBlogSection } from "../../../../components";
 
 export const blogSectionData: TBlogSection = {
   title: "Overview",

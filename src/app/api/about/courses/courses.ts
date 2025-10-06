@@ -1,4 +1,4 @@
-import { TCourses } from '@components/about';
+import { TCourses } from '../../../../components/index';
 
 export const coursesData: TCourses[] = [
   {

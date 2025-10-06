@@ -1,4 +1,4 @@
-import type { TSkillSet } from "@components/about";
+import type { TSkillSet } from "../../../../components";
 
 export const skillsData: TSkillSet[] = [
   {

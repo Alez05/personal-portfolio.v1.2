@@ -1,4 +1,4 @@
-import type { TProjectCard } from "@components/projects";
+import type { TProjectCard } from "../../../../components";
 
 export const projectsCardData: TProjectCard[] = [
   {

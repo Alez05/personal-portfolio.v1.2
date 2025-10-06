@@ -1,4 +1,4 @@
-import type { TBlogCard } from "@components/blog";
+import type { TBlogCard } from "../../../../components";
 
 export const blogCardData: TBlogCard[] = [
   {

@@ -1,4 +1,4 @@
-import { TProjectHl } from "@components/home/project-hl/project-hl.type";
+import { TProjectHl } from "../../../../components";
 
 export const projectsHighlightData: TProjectHl = {
   title: "Projects",

@@ -1,4 +1,4 @@
-import { THero } from "@components/home";
+import { THero } from "../../../../components";
 
 export const heroData: THero = {
   name: "Alexandru Cercel",
