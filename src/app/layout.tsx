@@ -1,7 +1,7 @@
 import { Inter, Work_Sans } from "next/font/google";
 import "../styles/global.css";
 import { Footer, Navbar } from "../components/shared/index";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Inter for headings
 const inter = Inter({
@@ -25,8 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${inter.variable} ${workSans.variable}`}>
       <body>
-        {children}
         <Navbar />
+         <main className="flex-1 mt-24"> {/* mt-24 to offset fixed navbar */}
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

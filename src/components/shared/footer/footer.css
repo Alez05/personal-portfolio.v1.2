@@ -1,58 +1,194 @@
-.footer {
-  background-color: #F1EFEC;
-  padding: 2rem 1rem;
-  width: 100%;
-  border-top: 1px solid #ccc;
-}
-
-.ft-content {
+/* ===== Footer Base ===== */
+.foo-container {
+  background: #fdfdfd;
+  padding: 3rem 2rem;
+  color: #123458;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.ft-col {
-  flex: 1 1 250px;
+/* ===== Grid Layout ===== */
+.foo-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ===== Columns ===== */
+.foo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.foo-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Info section ===== */
+.foo-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.foo-name-gradient {
+  background: linear-gradient(90deg, #123458, #345b8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foo-tagline {
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 250px;
+  color: #030303;
+}
+
+/* ===== Social links ===== */
+.foo-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.foo-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #000; /* default black */
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.foo-social-link:hover {
+  color: var(--blueish);
+  transform: translateX(3px);
+}
+
+.foo-icon {
+  width: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #000; /* black icons */
+  transition: color 0.2s ease;
+}
+
+.foo-social-link:hover .foo-icon {
+  color: var(--blueish);
+}
+
+/* ===== Quick links ===== */
+.foo-links-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.ft-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.ft-color {
-  color: blue;
-}
-
-.ft-description {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.ft-socials {
+.foo-link-item {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.6rem;
+  color: #000; /* default black */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.foo-link-item:hover {
+  color: var(--blueish);
+}
+
+.foo-icon-link {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #000; /* black icons */
+  transition: color 0.2s ease;
+}
+
+.foo-link-item:hover .foo-icon-link {
+  color: var(--blueish);
+}
+
+/* ===== Contact ===== */
+.foo-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #000; /* default black */
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.foo-contact-item:hover {
+  color: var(--blueish);
+}
+
+.foo-icon-contact {
+  width: 20px;
+  text-align: center;
+  color: #000; /* black icons */
   font-size: 1.2rem;
+  transition: color 0.2s ease;
 }
 
-.ft-socials a {
+.foo-contact-item:hover .foo-icon-contact {
+  color: var(--blueish);
+}
+
+.foo-contact-link {
   color: inherit;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.ft-socials a:hover {
-  color: blue;
+/* ===== Rights (Full width line) ===== */
+.foo-rights-wrapper {
+  width: 100%;
+  background: #fdfdfd;
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(18, 52, 88, 0.2);
 }
 
-.ft-rights {
-  text-align: left;
+.foo-rights {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.foo-rights-text {
   font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
+  color: #123458;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .foo-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .foo-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .foo-content {
+    grid-template-columns: 1fr;
+  }
+  .foo-container {
+    padding: 2rem 1.2rem;
+  }
 }
