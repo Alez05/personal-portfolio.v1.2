@@ -1,4 +1,4 @@
-import type { THeroPr } from "@components/projects";
+import type { THeroPr } from "../../../../components";
 
 export const heroprojectsData: THeroPr = {
   title: "Projects",

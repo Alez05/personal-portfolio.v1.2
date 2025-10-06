@@ -1,5 +1,5 @@
 // hobbies-data.ts
-import type { THobbies } from "@components/about";
+import type { THobbies } from "../../../../components";
 
 export const hobbiesData: THobbies[] = [
   {

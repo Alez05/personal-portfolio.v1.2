@@ -1,4 +1,4 @@
-import { TCareerJourney } from "@components/about"
+import { TCareerJourney } from "../../../../components/index"
 
 export const CareerJourneyData: TCareerJourney[] = [
   {

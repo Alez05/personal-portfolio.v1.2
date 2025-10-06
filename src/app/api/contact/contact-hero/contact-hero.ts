@@ -1,5 +1,5 @@
 // data/contact-hero.ts
-import { TContactHr } from "@components/contact";
+import { TContactHr } from "../../../../components";
 
 export const contactHeroData: TContactHr = {
   name: "Let's Build Something Together",

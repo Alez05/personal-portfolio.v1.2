@@ -1,4 +1,4 @@
-// components
+// Pages
 export { Home } from "./home";
 export { About } from "./about";
 export { Projects } from "./projects";
@@ -9,9 +9,23 @@ export { Footer } from "./shared";
 export { Navbar } from "./shared";
 export { ContactCTA } from "./shared";
 
-export type { TSkillSet } from "./about";
-
 // ABOUT FILE
+// components
+export { AboutHero } from "./about";
+export { Expertise } from "./about";
+export { CareerJourney } from "./about";
+export { TechSection } from "./about";
+export { EducationSection } from "./about";
+export { Hobbies } from "./about";
+
+// types
+export type { TSkillSet } from "./about";
+export type { TExpertise } from "./about";
+export type { TCareerJourney } from "./about";
+export type { TEducation } from "./about";
+export type { TCourses, TOngCourses } from "./about";
+export type { THobbies } from "./about";
+export type { TLanguage } from "./about";
 
 // BLOG FILE
 // components

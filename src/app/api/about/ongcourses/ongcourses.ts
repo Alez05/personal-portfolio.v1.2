@@ -1,4 +1,4 @@
-import type { TOngCourses } from '@components/about';
+import type { TOngCourses } from '../../../../components';
 
 export const ongoingCourses: TOngCourses[] = [
   {

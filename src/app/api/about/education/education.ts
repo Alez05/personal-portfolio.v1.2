@@ -1,5 +1,5 @@
 // education.data.ts
-import { TEducation } from "@components/about";
+import { TEducation } from "../../../../components";
 
 export const educationData: TEducation[] = [
   {

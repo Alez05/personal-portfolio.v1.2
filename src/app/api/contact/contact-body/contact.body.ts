@@ -1,5 +1,5 @@
 // data/contact-body-data.ts
-import { TContactBody } from "../../../../components/index";
+import { TContactBody } from "../../../../components";
 
 export const contactBodyData: TContactBody = {
   intro:

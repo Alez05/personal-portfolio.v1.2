@@ -1,4 +1,4 @@
-import { TBlogHl } from "@components/home";
+import { TBlogHl } from "../../../../components";
 
 export const blogHldata: TBlogHl = {
   title: 'Blogs',

@@ -1,4 +1,4 @@
-import type { TProjectSection } from "@components/projects";
+import type { TProjectSection } from "../../../../components";
 
 export const projectSectionData: TProjectSection = {
   title: "Projects",

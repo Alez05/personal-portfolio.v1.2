@@ -1,4 +1,4 @@
-import { TSkillsHl } from "@components/home";
+import { TSkillsHl } from "../../../../components";
 
 export const skillsHighlightsData: TSkillsHl= {
   title: "My Skills",
