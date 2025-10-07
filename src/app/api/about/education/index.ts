@@ -1,0 +1,1 @@
+export { educationData } from "./education";

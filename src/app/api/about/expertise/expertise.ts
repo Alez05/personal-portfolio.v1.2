@@ -1,6 +1,6 @@
 import type {  TExpertise } from "../../../../components"
 
-export const DomainExpertiseData: TExpertise[] = [
+export const expertiseData: TExpertise[] = [
   {
     title: "Front-End",
     icon: "fa-solid fa-paintbrush",

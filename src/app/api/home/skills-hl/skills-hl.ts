@@ -1,6 +1,6 @@
 import { TSkillsHl } from "../../../../components";
 
-export const skillsHighlightsData: TSkillsHl= {
+export const skillhlData: TSkillsHl= {
   title: "My Skills",
   description: "A showcase of some of the technologies I work with",
   skills: [

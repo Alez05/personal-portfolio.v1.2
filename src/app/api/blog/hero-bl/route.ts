@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { blogsHeroData } from "./hero-bl";
+import { blogHeroData } from "./hero-bl";
 
 export const GET = () => {
-  return NextResponse.json(blogsHeroData);
+  return NextResponse.json(blogHeroData);
 };

@@ -30,41 +30,44 @@ const Footer = async () => {
           {tagline && <p className="foo-tagline">{tagline}</p>}
         </div>
 
-        {/* Column 2 — Social Links */}
-        {socials && socials.length > 0 && (
-          <div className="foo-col foo-col-socials">
-            <h2 className="foo-section-title">Social links</h2>
-            <div className="foo-socials">
-              {socials.map((social, i) => (
-                <a
-                  key={i}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="foo-social-link"
-                >
-                  <i className={`foo-icon ${social.icon}`}></i>
-                  <span className="foo-social-label">{social.label}</span>
-                </a>
-              ))}
+        {/* Socials + Quick Links Row */}
+        <div className="foo-links-socials-row">
+          {/* Social Links */}
+          {socials && socials.length > 0 && (
+            <div className="foo-col foo-col-socials">
+              <h2 className="foo-section-title">Social links</h2>
+              <div className="foo-socials">
+                {socials.map((social, i) => (
+                  <a
+                    key={i}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="foo-social-link"
+                  >
+                    <i className={`foo-icon ${social.icon}`}></i>
+                    <span className="foo-social-label">{social.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Column 3 — Quick Links */}
-        {links && links.length > 0 && (
-          <div className="foo-col foo-col-links">
-            <h2 className="foo-section-title">Quick links</h2>
-            <div className="foo-links-list">
-              {links.map((link, i) => (
-                <a key={i} href={link.href} className="foo-link-item">
-                  {link.icon && <i className={`foo-icon-link ${link.icon}`}></i>}
-                  <span>{link.label}</span>
-                </a>
-              ))}
+          {/* Quick Links */}
+          {links && links.length > 0 && (
+            <div className="foo-col foo-col-links">
+              <h2 className="foo-section-title">Quick links</h2>
+              <div className="foo-links-list">
+                {links.map((link, i) => (
+                  <a key={i} href={link.href} className="foo-link-item">
+                    {link.icon && <i className={`foo-icon-link ${link.icon}`}></i>}
+                    <span>{link.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Column 4 — Contact */}
         {contact && (

@@ -1,0 +1,1 @@
+export { hobbiesData } from "./hobbies";

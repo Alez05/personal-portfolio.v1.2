@@ -1,39 +1,53 @@
-// components/home/Hero.tsx
+"use client";
+
+import { copyToClipboard } from "../../helpers";
+import { THero } from "./home-hl.type";
+import { heroData } from "../../../app/api/home";
 import "./home-hl.css";
-import { getHomeHl } from "./action";
 
-const HomeHl = async () => {
-  const hero = await getHomeHl();
-
-  if (!hero) return <section className="hero-container">No hero data</section>;
+const HomeHl = () => {
+  const hero: THero = heroData;
 
   return (
     <section className="hero-container">
       {/* Left side */}
       <div className="hero-left">
-        <h1 className="hero-name">{hero.name}</h1>
-        <h2 className="hero-role">{hero.role}</h2>
+        {hero.name && <h1 className="hero-name">{hero.name}</h1>}
+        {hero.role && <h2 className="hero-role">{hero.role}</h2>}
         {hero.text && <p className="hero-text">{hero.text}</p>}
 
         <div className="hero-info">
-          {hero.location && <p>📍 {hero.location}</p>}
-          {hero.email && <p>✉️ {hero.email}</p>}
-          {hero.phone && <p>📞 {hero.phone}</p>}
+          {hero.email && (
+            <p
+              onClick={() => copyToClipboard(hero.email!)}
+              className="cursor-pointer"
+            >
+              <i className={hero.emailIcon}></i> {hero.email}
+            </p>
+          )}
+          {hero.phone && (
+            <p
+              onClick={() => copyToClipboard(hero.phone!)}
+              className="cursor-pointer"
+            >
+              <i className={hero.phoneIcon}></i> {hero.phone}
+            </p>
+          )}
+          {hero.location && (
+            <p>
+              <i className={hero.locationIcon}></i> {hero.location}
+            </p>
+          )}
         </div>
 
         <div className="hero-buttons">
-          {hero.projectsLink && (
-            <a href={hero.projectsLink} className="hero-btn">
-              Projects
-            </a>
-          )}
-          {hero.contactLink && (
-            <a href={hero.contactLink} className="hero-btn">
-              Contact
+          {hero.aboutLink && (
+            <a href={hero.aboutLink} className="hero-btn hero-btn-about">
+              Read more
             </a>
           )}
           {hero.downloadLink && (
-            <a href={hero.downloadLink} className="hero-btn">
+            <a href={hero.downloadLink} className="hero-btn hero-btn-cv">
               Download CV
             </a>
           )}
@@ -47,6 +61,7 @@ const HomeHl = async () => {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hero-social-link"
               >
                 <i className={s.icon}></i>
               </a>

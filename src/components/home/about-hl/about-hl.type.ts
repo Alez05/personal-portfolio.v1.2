@@ -1,4 +1,4 @@
-import { TExpertise } from "@components/about";
+import { TExpertise } from "../../../components";
 
 export type TAboutHl = {
   title?: string;

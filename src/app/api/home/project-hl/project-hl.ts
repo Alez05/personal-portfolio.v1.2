@@ -1,6 +1,6 @@
 import { TProjectHl } from "../../../../components";
 
-export const projectsHighlightData: TProjectHl = {
+export const projecthlData: TProjectHl = {
   title: "Projects",
   description:
     "Get inspired by completed projects: from sleek business websites to advanced web applications.",

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
-import { AboutSectionData } from "./about-hl"
+import { abouthlData } from "./about-hl"
 
 export const GET = () => {
-  return NextResponse.json(AboutSectionData)
+  return NextResponse.json(abouthlData)
 }

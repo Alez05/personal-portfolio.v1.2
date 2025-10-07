@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { languagesData } from "./language";
+import { languageData } from "./language";
 
 export const GET = () => {
-  return NextResponse.json(languagesData);
+  return NextResponse.json(languageData);
 };

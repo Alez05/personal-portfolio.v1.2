@@ -1,10 +1,5 @@
 // hero.type.ts
-export type TSocialPlatform =
-  | "github"
-  | "linkedin"
-  | "email"
-  | "stackoverflow"
-  | "codewars";
+export type TSocialPlatform = "facebook" | "github" | "instagram" | "linkedin";
 
 export type TSocial = {
   platform: TSocialPlatform;
@@ -12,7 +7,13 @@ export type TSocial = {
   icon: string;
 };
 
-export type THero = {
+export type TContactIcon = {
+  locationIcon?: string;
+  emailIcon?: string;
+  phoneIcon?: string;
+};
+
+export type THero = TContactIcon & {
   name?: string;
   role?: string;
   text?: string;
@@ -20,9 +21,7 @@ export type THero = {
   email?: string;
   phone?: string;
   profile?: string;
-  projectsLink?: string;
-  contactLink?: string;
+  aboutLink?: string;
   downloadLink?: string;
-
   socials?: TSocial[];
 };
