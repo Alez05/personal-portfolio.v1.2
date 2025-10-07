@@ -5,8 +5,6 @@ const Home = () => {
   return (
     <main>
       <HomeHl />
-      <AboutHl />
-      <SkillHl />
       <ProjectHl />
       <BlogHl />
       <ContactCTA />

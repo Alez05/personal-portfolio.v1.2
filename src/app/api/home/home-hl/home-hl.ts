@@ -3,11 +3,11 @@ import { THero } from "../../../../components";
 export const heroData: THero = {
   name: "Alexandru Cercel",
   role: "Fullstack Web Developer",
-  text: "Building clean, modern, and scalable web applications.",
+  text: "Building performant, scalable, and maintainable web applications from concept to deployment.",
   location: "London / Amsterdam",
   email: "cercel.alexandru436@gmail.com",
   phone: "+44 7770282405",
-  profile: "./image/profile.png",
+  profile: "./image/pixelrobot.png",
   aboutLink: "/about",
   downloadLink: "/cv.pdf",
   locationIcon: "fa-solid fa-location-dot",

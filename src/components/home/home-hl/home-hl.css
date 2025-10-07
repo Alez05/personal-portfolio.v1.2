@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 7rem 8% 5rem;
   gap: 3rem;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh);
   background-color: #ffffff;
   box-sizing: border-box;
   flex-wrap: wrap;
