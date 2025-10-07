@@ -1,6 +1,6 @@
 import { TBlogHl } from "../../../../components";
 
-export const blogHldata: TBlogHl = {
+export const bloghlData: TBlogHl = {
   title: 'Blogs',
   description: 'Check out my most recent blogs',
     blogs: [

@@ -5,14 +5,12 @@ export const footerData: TFooter = {
   tagline:
     "Full stack web developer focused on front end development, deep learning, and system research.",
   socials: [
-    { icon: "fa-brands fa-linkedin", label: "LinkedIn", href: "https://linkedin.com/in/yourprofile" },
-    { icon: "fa-brands fa-github", label: "GitHub", href: "https://github.com/yourprofile" },
-    { icon: "fa-solid fa-envelope", label: "Email", href: "mailto:cercel.alexandru436@gmail.com" },
-    { icon: "fa-solid fa-code", label: "Codewars", href: "https://www.codewars.com/users/yourprofile" },
-    { icon: "fa-brands fa-stack-overflow", label: "Stack Overflow", href: "https://stackoverflow.com/users/yourprofile" },
+    { platform: "facebook", icon: "fa-brands fa-facebook-f", label: "Facebook", url: "https://facebook.com/alexandru" },
+    { platform: "github", icon: "fa-brands fa-github", label: "GitHub", url: "https://github.com/alexp" },
+    { platform: "instagram", icon: "fa-brands fa-instagram", label: "Instagram", url: "https://instagram.com/alexandru" },
+    { platform: "linkedin", icon: "fa-brands fa-linkedin-in", label: "LinkedIn", url: "https://linkedin.com/in/alexp" },
   ],
   links: [
-    { icon: "fa-solid fa-house", label: "Home", href: "/" },
     { icon: "fa-solid fa-user", label: "About", href: "/about" },
     { icon: "fa-solid fa-folder-open", label: "Projects", href: "/projects" },
     { icon: "fa-solid fa-pen-nib", label: "Blog", href: "/blog" },

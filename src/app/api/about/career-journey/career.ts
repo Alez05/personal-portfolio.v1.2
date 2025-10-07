@@ -1,6 +1,6 @@
 import { TCareerJourney } from "../../../../components/index"
 
-export const CareerJourneyData: TCareerJourney[] = [
+export const careerData: TCareerJourney[] = [
   {
     jobTitle: "Front end Web Developer",
     company: "WoW DoP Full time",

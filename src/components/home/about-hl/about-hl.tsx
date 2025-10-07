@@ -1,6 +1,6 @@
 // components/home/AboutSection.tsx
 import "./about-hl.css";
-import { Expertise } from "@components/about";
+import { Expertise } from "../../about";
 import { getAboutHlAction } from "./action";
 
 const AboutHl = async () => {

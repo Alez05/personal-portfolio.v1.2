@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
-import { CareerJourneyData } from "./career"
+import { careerData } from "./career"
 
 export const GET = () => {
-  return NextResponse.json(CareerJourneyData)
+  return NextResponse.json(careerData)
 };

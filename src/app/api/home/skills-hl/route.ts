@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { skillsHighlightsData } from "./skills-hl";
+import { skillhlData } from "./skills-hl";
 
 export const GET = () => {
-  return NextResponse.json(skillsHighlightsData);
+  return NextResponse.json(skillhlData);
 };

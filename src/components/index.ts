@@ -5,11 +5,14 @@ export { Projects } from "./projects";
 export { Contact } from "./contact";
 export { Blog } from "./blog";
 export { Feedback } from "./feedback";
-export { Footer } from "./shared";
-export { Navbar } from "./shared";
-export { ContactCTA } from "./shared";
 
 // Shared
+export { ContactCTA } from "./shared";
+export { Footer } from "./shared";
+export { Navbar } from "./shared";
+
+// Helper Functions
+export { copyToClipboard } from "./helpers";
 
 // types
 export type { TFooter } from "./shared";

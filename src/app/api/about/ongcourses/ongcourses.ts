@@ -1,6 +1,6 @@
 import type { TOngCourses } from '../../../../components';
 
-export const ongoingCourses: TOngCourses[] = [
+export const ongCoursesData: TOngCourses[] = [
   {
     id: "c001",
     name: "JavaScript Fundamentals",

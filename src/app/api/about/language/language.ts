@@ -1,7 +1,7 @@
 // languages-data.ts
 import type { TLanguage } from "../../../../components";
 
-export const languagesData: TLanguage[] = [
+export const languageData: TLanguage[] = [
   {
     id: "lang1",
     name: "Romanian",
