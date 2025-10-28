@@ -1,4 +1,4 @@
-import { ContactCTA } from "@components/shared"
+import { ContactCTA } from "../shared"
 import { HeroPr } from "./hero-pr"
 import { ProjectSection } from "./projects-section"
 import { ProjectCard } from "./project-card"

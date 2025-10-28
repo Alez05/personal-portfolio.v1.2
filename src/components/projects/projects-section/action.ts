@@ -1,4 +1,4 @@
-import { projectSectionData } from "@api/projects/project-section/project-section";
+import { projectSectionData } from "../../../app/api";
 import type { TProjectSection } from "./projects.type";
 
 export async function getProjectSectionAction(): Promise<TProjectSection | null> {
