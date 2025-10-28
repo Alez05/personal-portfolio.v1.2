@@ -1,4 +1,4 @@
-import { blogSectionData } from "@api/blog/blog-section/blog-section";
+import { blogSectionData } from "../../../app/api";
 import type { TBlogSection } from "./blog-section.type";
 
 export async function getBlogSectionAction(): Promise<TBlogSection | null> {

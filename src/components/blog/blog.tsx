@@ -1,4 +1,4 @@
-import { ContactCTA } from "@components/shared";
+import { ContactCTA } from "../shared";
 import { HeroBl } from "./hero-bl";
 import { BlogSection } from "./blog-section";
 import { BlogCard } from "./blog-card";

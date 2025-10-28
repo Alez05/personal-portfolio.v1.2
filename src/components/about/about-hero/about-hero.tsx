@@ -1,4 +1,4 @@
-import { DownloadButton } from '@components/shared'
+import { DownloadButton } from '../../shared'
 import './about-hero.css'
 
 const AboutHero = () => {
