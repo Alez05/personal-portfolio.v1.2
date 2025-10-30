@@ -1,9 +1,12 @@
+import dynamic from "next/dynamic";
 import { getProjectHlAction } from "./action";
 import "./project-hl.css";
+import ProjectHlClient from "./projecthl-client";
+
+// Load client dynamically (no SSR)
 
 const ProjectHl = async () => {
   const data = await getProjectHlAction();
-
   if (!data) {
     return (
       <section className="ph-section">
@@ -19,28 +22,21 @@ const ProjectHl = async () => {
   return (
     <section className="ph-section">
       <div className="ph-container">
-        {title && <h2 className="ph-title">{title}</h2>}
-        {description && <p className="ph-description">{description}</p>}
-
-        <div className="ph-carousel">
-          {projects?.map((project, idx) => (
-            <a key={idx} href={project.link} className="ph-project-card">
-              <img
-                src={project.image}
-                alt={`Project ${idx + 1}`}
-                className="ph-project-image"
-              />
-            </a>
-          ))}
+        {/* LEFT COLUMN */}
+        <div className="ph-text-column">
+          {title && <h2 className="ph-title">{title}</h2>}
+          {description && <p className="ph-description">{description}</p>}
+          {cta && (
+            <div className="ph-cta">
+              <a href={cta.link} className="ph-cta-button">{cta.label}</a>
+            </div>
+          )}
         </div>
 
-        {cta && (
-          <div className="ph-cta">
-            <a href={cta.link} className="ph-cta-button">
-              {cta.label}
-            </a>
-          </div>
-        )}
+        {/* RIGHT COLUMN: Client Slider */}
+        <div className="ph-client-column">
+          <ProjectHlClient projects={projects as any} />
+        </div>
       </div>
     </section>
   );
