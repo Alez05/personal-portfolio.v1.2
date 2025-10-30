@@ -1,16 +1,13 @@
 import { TProjectHl } from "../../../../components";
 
 export const projecthlData: TProjectHl = {
-  title: "Projects",
+  title: "Selected Works/",
   description:
     "Get inspired by completed projects: from sleek business websites to advanced web applications.",
-  projects: [
-    { image: "/projects/eyefine.png", link: "/projects/eyefine" },
-    { image: "/projects/portfolio.png", link: "/projects/portfolio" },
-    { image: "/projects/shopapp.png", link: "/projects/shopapp" },
-  ],
+  label: "(Projects)",
+  counter: "1",
   cta: {
-    label: "View Projects",
-    link: "/projects",
-  },
+    href: "../public/video/Download.mp4",
+    label: "Video"
+  }
 };
