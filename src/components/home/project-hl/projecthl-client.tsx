@@ -42,10 +42,8 @@ export const ProjectHlClient: React.FC<Props> = ({ videos = [] }) => {
       const counterHeight = counterRef.current.offsetHeight;
       const offsetTop = 120; // distance from top of viewport
 
-      let top = Math.min(
-        offsetTop,
-        containerRect.bottom - counterHeight
-      );
+      // top position for the counter: never above container top, never below container bottom
+      let top = Math.min(offsetTop, containerRect.bottom - counterHeight);
 
       if (containerRect.top > offsetTop) {
         top = containerRect.top;
@@ -64,32 +62,41 @@ export const ProjectHlClient: React.FC<Props> = ({ videos = [] }) => {
 
   return (
     <div className="ph-client-container" ref={containerRef}>
-      {/* Counter */}
-      <div className="ph-counter-wrapper" ref={counterRef}>
-        <div className="ph-counter">{padNumber(activeIndex + 1)}</div>
+      {/* ========== LEFT FIXED COUNTER COLUMN ========== */}
+      <div className="ph-counter-col">
+        <div className="ph-counter-wrapper" ref={counterRef}>
+          <div className="ph-counter">{padNumber(activeIndex + 1)}</div>
+        </div>
       </div>
 
-      {/* Projects */}
+      {/* ========== RIGHT PROJECTS COLUMN ========== */}
       <div className="ph-projects-column">
         {videos.map((p, i) => (
           <div
             key={i}
-            ref={(el: HTMLDivElement | null) => {projectRefs.current[i] = el}}
+            ref={(el: HTMLDivElement | null) => { projectRefs.current[i] = el; }}
             data-index={i}
             className="ph-project"
           >
             <div className="ph-video-wrap">
               {p.video ? (
-                <video src={p.video} className="ph-video" controls preload="metadata" />
+                <video
+                  src={p.video}
+                  className="ph-video"
+                  controls
+                  preload="metadata"
+                />
               ) : (
                 <div className="ph-client-placeholder">No video</div>
               )}
             </div>
+
             <div className="ph-project-layout">
               <div className="ph-project-info">
                 <div className="ph-project-field">{p.field}</div>
                 <div className="ph-project-name">{p.name}</div>
               </div>
+
               <div className="ph-project-meta">
                 {p.tag && <span className="ph-tag">{p.tag}</span>}
                 {p.year && <span className="ph-year">{p.year}</span>}
