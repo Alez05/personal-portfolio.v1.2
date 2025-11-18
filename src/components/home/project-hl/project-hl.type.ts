@@ -6,14 +6,16 @@ export type TProjectVideo = {
   tag?: string;
 };
 
+export type TProjectCta = {
+  href: string;
+  label: string;
+};
+
 export type TProjectHl = {
   title?: string;
   description?: string;
   label?: string;
   counter?: string;
-  cta?: {
-    href?: string;
-    label?: string;
-  }[];
-  video?: TProjectVideo;
+  videos?: TProjectVideo[];
+  cta?: TProjectCta[]
 };

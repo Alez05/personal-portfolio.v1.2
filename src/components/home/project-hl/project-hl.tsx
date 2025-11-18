@@ -1,12 +1,11 @@
-import dynamic from "next/dynamic";
+import { TProjectHl } from "./project-hl.type";
 import { getProjectHlAction } from "./action";
+import { ProjectHlClient } from "./projecthl-client";
 import "./project-hl.css";
-import ProjectHlClient from "./projecthl-client";
-
-// Load client dynamically (no SSR)
 
 const ProjectHl = async () => {
-  const data = await getProjectHlAction();
+  const data: TProjectHl | null = await getProjectHlAction();
+
   if (!data) {
     return (
       <section className="ph-section">
@@ -17,25 +16,34 @@ const ProjectHl = async () => {
     );
   }
 
-  const { title, description, projects, cta } = data;
+  const { title, description, videos, cta } = data;
 
   return (
     <section className="ph-section">
-      <div className="ph-container">
-        {/* LEFT COLUMN */}
-        <div className="ph-text-column">
+        <div className="ph-left">
           {title && <h2 className="ph-title">{title}</h2>}
-          {description && <p className="ph-description">{description}</p>}
-          {cta && (
-            <div className="ph-cta">
-              <a href={cta.link} className="ph-cta-button">{cta.label}</a>
-            </div>
-          )}
         </div>
+      <div className="ph-layout">
+        {/* LEFT COLUMN */}
 
-        {/* RIGHT COLUMN: Client Slider */}
-        <div className="ph-client-column">
-          <ProjectHlClient projects={projects as any} />
+        {/* RIGHT COLUMN */}
+        <div className="ph-right">
+          <div className="ph-text-description">
+            {description && <p className="ph-description">{description}</p>}
+
+            {cta &&
+              cta.map((item, idx) => (
+                <div key={idx} className="ph-cta">
+                  <a href={item.href} className="ph-cta-button">
+                    {item.label}
+                  </a>
+                </div>
+              ))}
+          </div>
+
+          <div className="ph-client-column">
+            <ProjectHlClient videos={videos} />
+          </div>
         </div>
       </div>
     </section>

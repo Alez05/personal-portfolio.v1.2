@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { projecthlData } from "./project-hl";
+import { projectHlData } from "./project-hl";
 
 export const GET = () => {
-  return NextResponse.json(projecthlData);
+  return NextResponse.json(projectHlData);
 };
